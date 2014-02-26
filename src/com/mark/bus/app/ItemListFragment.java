@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.mark.bus.R;
 import com.mark.bus.dummy.DummyContent;
+import com.mark.bus.dummy.FakeListData;
+import com.mark.bus.listable.ItemListAdapter;
+import com.mark.bus.listable.dto.ListItemDTO;
 
 /**
  * A list fragment representing a list of Items. This fragment also supports
@@ -69,11 +73,20 @@ public class ItemListFragment extends ListFragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		// TODO: replace with a real list adapter.
-		setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-		        android.R.layout.simple_list_item_activated_1, android.R.id.text1, DummyContent.ITEMS));
+		
+		//获取adapter和数据
+		ArrayAdapter<ListItemDTO> adapter = adapter();
+		
+		setListAdapter(adapter);
 	}
+
+	/**
+	 * @return
+	 */
+    private ArrayAdapter<ListItemDTO> adapter() {
+	    ArrayAdapter<ListItemDTO> adapter = new ItemListAdapter(getActivity(), R.layout.list_item_row, FakeListData.getData());
+	    return adapter;
+    }
 
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {

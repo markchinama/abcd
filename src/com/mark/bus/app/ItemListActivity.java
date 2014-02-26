@@ -2,6 +2,7 @@ package com.mark.bus.app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 
 import com.mark.bus.R;
@@ -22,17 +23,20 @@ import com.mark.bus.R;
  * interface to listen for item selections.
  */
 public class ItemListActivity extends FragmentActivity implements ItemListFragment.Callbacks {
-
 	/**
 	 * Whether or not the activity is in two-pane mode, i.e. running on a tablet
 	 * device.
 	 */
 	private boolean mTwoPane;
+	
+	private Fragment statusDetailFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_item_list);
+		
+		initStatusDetailFragment();
 
 		if (findViewById(R.id.item_detail_container) != null) {
 			// The detail container view will be present only in the
@@ -64,7 +68,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 			arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
 			ItemDetailFragment fragment = new ItemDetailFragment();
 			fragment.setArguments(arguments);
-			getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragment).commit();
+			getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, statusDetailFragment).commit();
 
 		} else {
 			// In single-pane mode, simply start the detail activity
@@ -73,5 +77,9 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 			detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
 			startActivity(detailIntent);
 		}
+	}
+	
+	private void initStatusDetailFragment(){
+		statusDetailFragment = new StatusDetailFragment();
 	}
 }

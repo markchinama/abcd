@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_power_panel"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/temp_bus" />
+
+    <RelativeLayout
+        android:id="@+id/status_power_panel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/status_power_panel_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/temp_battery_009" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="78%" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_energy_panel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/status_power_panel" >
+
+        <TextView
+            android:id="@+id/status_energy_panel_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="234KWH" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/status_energy_panel_number"
+            android:text="剩余能量" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_distance_panel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/status_energy_panel" >
+
+        <TextView
+            android:id="@+id/status_distance_panel_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="234KWH" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/status_distance_panel_number"
+            android:text="剩余里程" />
+    </RelativeLayout>
+
+</RelativeLayout>
