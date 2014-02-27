@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.mark.bus.R;
-import com.mark.bus.dummy.DummyContent;
 import com.mark.bus.dummy.FakeListData;
 import com.mark.bus.listable.ItemListAdapter;
 import com.mark.bus.listable.dto.ListItemDTO;
@@ -96,6 +95,8 @@ public class ItemListFragment extends ListFragment {
 		if (savedInstanceState != null && savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)) {
 			setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION));
 		}
+		
+		getListView().performItemClick(view, 0, 0);
 	}
 
 	@Override
@@ -124,7 +125,7 @@ public class ItemListFragment extends ListFragment {
 
 		// Notify the active callbacks interface (the activity, if the
 		// fragment is attached to one) that an item has been selected.
-		mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
+		mCallbacks.onItemSelected(String.valueOf(FakeListData.getData().get(position).getId()));
 	}
 
 	@Override

@@ -37,9 +37,8 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	 * Whether or not the activity is in two-pane mode, i.e. running on a tablet
 	 * device.
 	 */
-//	private boolean mTwoPane;
+	// private boolean mTwoPane;
 
-	private Fragment statusDetailFragment;
 	private ImageButton shutdownButton;
 	private NumberPicker temperature;
 
@@ -55,20 +54,19 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 
 		bindAllViews();
 
-		initStatusDetailFragment();
-
-//		if (findViewById(R.id.item_detail_container) != null) {
-//			// The detail container view will be present only in the
-//			// large-screen layouts (res/values-large and
-//			// res/values-sw600dp). If this view is present, then the
-//			// activity should be in two-pane mode.
-//			mTwoPane = true;
-//
-//			// In two-pane mode, list items should be given the
-//			// 'activated' state when touched.
-//			((ItemListFragment) getSupportFragmentManager().findFragmentById(R.id.item_list))
-//			        .setActivateOnItemClick(true);
-//		}
+		// if (findViewById(R.id.item_detail_container) != null) {
+		// // The detail container view will be present only in the
+		// // large-screen layouts (res/values-large and
+		// // res/values-sw600dp). If this view is present, then the
+		// // activity should be in two-pane mode.
+		// mTwoPane = true;
+		//
+		// // In two-pane mode, list items should be given the
+		// // 'activated' state when touched.
+		// ((ItemListFragment)
+		// getSupportFragmentManager().findFragmentById(R.id.item_list))
+		// .setActivateOnItemClick(true);
+		// }
 
 		// TODO: If exposing deep links into your app, handle intents here.
 	}
@@ -125,29 +123,39 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	 */
 	@Override
 	public void onItemSelected(String id) {
-//		if (mTwoPane) {
-			// In two-pane mode, show the detail view in this activity by
-			// adding or replacing the detail fragment using a
-			// fragment transaction.
-			Bundle arguments = new Bundle();
-			System.out.println(id);
-			arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
-			ItemDetailFragment fragment = new ItemDetailFragment();
-			fragment.setArguments(arguments);
-			getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, statusDetailFragment)
-			        .commit();
+		// if (mTwoPane) {
+		// In two-pane mode, show the detail view in this activity by
+		// adding or replacing the detail fragment using a
+		// fragment transaction.
+		Bundle arguments = new Bundle();
 
-//		} else {
-//			// In single-pane mode, simply start the detail activity
-//			// for the selected item ID.
-//			Intent detailIntent = new Intent(this, ItemDetailActivity.class);
-//			detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
-//			startActivity(detailIntent);
-//		}
+		arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
+		
+		Fragment target = null;
+		if (id.equals("1")) {
+			target = statusDetailFragment(arguments);
+		} else {
+			target = itemDetailFragment(arguments);
+		}
+		getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, target).commit();
+
+		// } else {
+		// // In single-pane mode, simply start the detail activity
+		// // for the selected item ID.
+		// Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		// detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
+		// startActivity(detailIntent);
+		// }
 	}
 
-	private void initStatusDetailFragment() {
-		statusDetailFragment = new StatusDetailFragment();
+	private Fragment statusDetailFragment(Bundle arguments) {
+		return new StatusDetailFragment();
+	}
+
+	private Fragment itemDetailFragment(Bundle arguments) {
+		ItemDetailFragment itemDetailFragment = new ItemDetailFragment();
+		itemDetailFragment.setArguments(arguments);
+		return itemDetailFragment;
 	}
 
 	/**
