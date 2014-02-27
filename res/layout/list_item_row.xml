@@ -8,11 +8,15 @@
         android:id="@+id/list_item_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:src="@drawable/temp_kim_yongii" />
 
     <TextView
         android:id="@+id/list_item_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
 </LinearLayout>

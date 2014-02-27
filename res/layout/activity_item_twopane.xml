@@ -21,10 +21,11 @@
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     -->
 
-    <LinearLayout android:baselineAligned="false"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4" >
+        android:layout_weight="4"
+        android:baselineAligned="false" >
 
         <fragment
             android:id="@+id/item_list"
@@ -46,10 +47,79 @@
         android:layout_height="0dp"
         android:layout_weight="1" >
 
+        <ImageButton
+            android:id="@+id/item_list_shutdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/temp_shutdown" />
+
+        <NumberPicker
+            android:id="@+id/item_list_temprature_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/item_list_shutdown" />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="asdfasf" />
+            android:id="@+id/item_list_temprature_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_list_temprature_picker"
+            android:text="空调"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <!-- 横杆 温度调节 -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_list_temprature_seekbar"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/item_list_temprature_text"
+            android:text="22 C" />
+
+        <SeekBar
+            android:id="@+id/item_list_temprature_seekbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_list_temprature_text"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/textView2" />
+        <!-- 横杆 温度调节 完 -->
+
+        <Spinner
+            android:id="@+id/item_list_temprature_mode_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_list_temprature_text"
+            android:layout_toRightOf="@+id/textView2" />
+
+        <!-- 功率 -->
+
+        <TextView
+            android:id="@+id/item_list_power_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_list_temprature_text"
+            android:layout_marginLeft="106dp"
+            android:layout_toRightOf="@+id/item_list_temprature_seekbar"
+            android:text="功率"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <!-- 功率 完 -->
+
+        <NumberPicker
+            android:id="@+id/item_list_power_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="71dp"
+            android:layout_toRightOf="@+id/item_list_power_text" />
+
     </RelativeLayout>
 
 </LinearLayout>
