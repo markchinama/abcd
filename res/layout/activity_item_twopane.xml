@@ -17,8 +17,6 @@
     that replace the single-pane version of the layout with
     this two-pane version.
 
-    For more on layout aliases, see:
-    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     -->
 
     <LinearLayout
@@ -48,11 +46,19 @@
         android:layout_weight="1" >
 
         <ImageButton
-            android:id="@+id/item_list_shutdown"
-            android:layout_width="wrap_content"
+            android:id="@+id/item_list_home"
+            android:layout_width="187dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:src="@drawable/temp_shutdown" />
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/temp_home" />
+
+        <ImageButton
+            android:id="@+id/item_list_shutdown"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/temp_shutdown" 
+            android:layout_toRightOf="@+id/item_list_home"/>
 
         <NumberPicker
             android:id="@+id/item_list_temprature_picker"
@@ -94,6 +100,8 @@
         <Spinner
             android:id="@+id/item_list_temprature_mode_spinner"
             android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             android:layout_above="@+id/item_list_temprature_text"
             android:layout_toRightOf="@+id/textView2" />
@@ -119,7 +127,6 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="71dp"
             android:layout_toRightOf="@+id/item_list_power_text" />
-
     </RelativeLayout>
 
 </LinearLayout>

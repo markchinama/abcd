@@ -72,7 +72,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	}
 
 	/**
-	 * 初始化视图对象
+	 * 鍒濆鍖栬鍥惧璞�
 	 */
 	private void bindAllViews() {
 		shutdownButton = (ImageButton) findViewById(R.id.item_list_shutdown);
@@ -102,7 +102,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	}
 
 	/**
-	 * 计算 功率选择器 区间
+	 * 璁＄畻 鍔熺巼閫夋嫨鍣�鍖洪棿
 	 * 
 	 * @param minValue
 	 * @param maxValue
@@ -159,7 +159,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	}
 
 	/**
-	 * 关闭系统
+	 * 鍏抽棴绯荤粺
 	 * 
 	 * @author emerson
 	 * 
@@ -167,12 +167,12 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	private class ShutdownListener implements OnClickListener {
 		@Override
 		public void onClick(View v) {
-			Toast.makeText(ItemListActivity.this, "您点击了关闭系统按钮", Toast.LENGTH_LONG).show();
+			Toast.makeText(ItemListActivity.this, "虚拟关机按钮", Toast.LENGTH_LONG).show();
 		}
 	}
 
 	/**
-	 * 温度调节
+	 * 娓╁害璋冭妭
 	 * 
 	 * @author emerson
 	 * 
@@ -181,13 +181,13 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 		@Override
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
-				Toast.makeText(ItemListActivity.this, "温度调整到 " + view.getValue(), Toast.LENGTH_SHORT).show();
+				Toast.makeText(ItemListActivity.this, "娓╁害璋冩暣鍒�" + view.getValue(), Toast.LENGTH_SHORT).show();
 			}
 		}
 	}
 
 	/**
-	 * 模式选择
+	 * 妯″紡閫夋嫨
 	 * 
 	 * @author emerson
 	 * 
@@ -195,7 +195,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	private class ModeSpinnerSelectedListener implements OnItemSelectedListener {
 		@Override
 		public void onItemSelected(AdapterView<?> adapterView, View view, int position, long arg3) {
-			Toast.makeText(ItemListActivity.this, "选择了 " + modeSpinnerAdapter.getItem(position), Toast.LENGTH_SHORT)
+			Toast.makeText(ItemListActivity.this, "閫夋嫨浜�" + modeSpinnerAdapter.getItem(position), Toast.LENGTH_SHORT)
 			        .show();
 		}
 
@@ -206,7 +206,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	}
 
 	/**
-	 * 功率调节
+	 * 鍔熺巼璋冭妭
 	 * 
 	 * @author emerson
 	 * 
@@ -215,7 +215,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 		@Override
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
-				Toast.makeText(ItemListActivity.this, "功率调整到 " + view.getValue(), Toast.LENGTH_SHORT).show();
+				Toast.makeText(ItemListActivity.this, "鍔熺巼璋冩暣鍒�" + view.getValue(), Toast.LENGTH_SHORT).show();
 			}
 		}
 	}

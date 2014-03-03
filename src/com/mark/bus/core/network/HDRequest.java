@@ -31,25 +31,25 @@ public abstract class HDRequest<T> extends Request<T> {
 		String serverMessage = response.headers.get("X-hand-message");
 		LogUtil.info(this, "response header", "s: " + x_hand_status + ", m: " + serverMessage);
 
-		// 正常处理
+		// 姝ｅ父澶勭悊
 		if ("ok".equals(x_hand_status)) {
 			BusApplication.getApplication().updateCoockies(response.headers);
 			return parseResponse(response);
 		}
 
-		// 请求有错误
+		// 璇锋眰鏈夐敊璇�
 
 		if ("failure".equals(x_hand_status)) {
 			return Response.error(new ParseError(new HDRequestException(serverMessage)));
 		}
 
-		// 需要登录
+		// 闇�鐧诲綍
 		if (x_hand_status.equals("login required")) {
 //			mContext.startActivity(new Intent(mContext, LoginActivity.class));
 			return Response.error(new ParseError(new HDRequestException(serverMessage)));
 		}
 
-		return Response.error(new ParseError(new RuntimeException("无法解析的响应状态")));
+		return Response.error(new ParseError(new RuntimeException("不能解析错误")));
 
 	}
 
