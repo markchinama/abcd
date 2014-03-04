@@ -9,10 +9,10 @@ import com.mark.bus.listable.dto.ListItemDTO;
 public class FakeListData {
 
 	public static List<ListItemDTO> getData() {
-		return Arrays.asList(new ListItemDTO(1, R.drawable.temp_info, "整车信息"),
-				new ListItemDTO(2, R.drawable.temp_transmission, "车身控制"),
-				new ListItemDTO(3, R.drawable.temp_camera, "视频监控"),
-				new ListItemDTO(4, R.drawable.temp_system_monitor, "故障分析"));
+		return Arrays.asList(new ListItemDTO(1, R.drawable.temp_info, "鏁磋溅淇℃伅"),
+				new ListItemDTO(2, R.drawable.temp_transmission, "杞﹁韩鎺у埗"),
+				new ListItemDTO(3, R.drawable.temp_camera, "瑙嗛鐩戞帶"),
+				new ListItemDTO(4, R.drawable.temp_system_monitor, "鏁呴殰璇婃柇"));
 
 	}
 

@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.NumberPicker;
 import android.widget.NumberPicker.OnScrollListener;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mark.bus.R;
@@ -32,7 +33,8 @@ import com.mark.bus.R;
  * This activity also implements the required {@link ItemListFragment.Callbacks}
  * interface to listen for item selections.
  */
-public class ItemListActivity extends FragmentActivity implements ItemListFragment.Callbacks {
+public class ItemListActivity extends FragmentActivity implements
+		ItemListFragment.Callbacks {
 	/**
 	 * Whether or not the activity is in two-pane mode, i.e. running on a tablet
 	 * device.
@@ -78,18 +80,20 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 		shutdownButton = (ImageButton) findViewById(R.id.item_list_shutdown);
 		shutdownButton.setOnClickListener(new ShutdownListener());
 
-		temperature = (NumberPicker) findViewById(R.id.item_list_temprature_picker);
-		temperature.setMaxValue(35);
-		temperature.setMinValue(16);
-		temperature.setWrapSelectorWheel(false);
-		temperature.setOnScrollListener(new TemperatureChangeListener());
-		temperature.setFocusable(false);
+		//temperature = (NumberPicker) findViewById(R.id.item_list_temprature_picker);
+		//temperature.setMaxValue(35);
+		//temperature.setMinValue(16);
+		//temperature.setWrapSelectorWheel(false);
+		//temperature.setOnScrollListener(new TemperatureChangeListener());
+		//temperature.setFocusable(false);
 
 		modeSpinner = (Spinner) findViewById(R.id.item_list_temprature_mode_spinner);
-		modeSpinnerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, new String[] {
-		        "模式1", "模式2", "模式3" });
+		modeSpinnerAdapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_dropdown_item_1line, new String[] {
+						"    模式1", "    模式2", "    模式3" });
 		modeSpinner.setAdapter(modeSpinnerAdapter);
-		modeSpinner.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
+		modeSpinner
+				.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
 
 		powerPicker = (NumberPicker) findViewById(R.id.item_list_power_picker);
 		int minValue = 500;
@@ -102,7 +106,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	}
 
 	/**
-	 * 璁＄畻 鍔熺巼閫夋嫨鍣�鍖洪棿
+	 * 
 	 * 
 	 * @param minValue
 	 * @param maxValue
@@ -130,14 +134,15 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 		Bundle arguments = new Bundle();
 
 		arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
-		
+
 		Fragment target = null;
 		if (id.equals("1")) {
 			target = statusDetailFragment(arguments);
 		} else {
 			target = itemDetailFragment(arguments);
 		}
-		getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, target).commit();
+		getSupportFragmentManager().beginTransaction()
+				.replace(R.id.item_detail_container, target).commit();
 
 		// } else {
 		// // In single-pane mode, simply start the detail activity
@@ -159,7 +164,7 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	}
 
 	/**
-	 * 鍏抽棴绯荤粺
+	 * 
 	 * 
 	 * @author emerson
 	 * 
@@ -167,7 +172,8 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	private class ShutdownListener implements OnClickListener {
 		@Override
 		public void onClick(View v) {
-			Toast.makeText(ItemListActivity.this, "虚拟关机按钮", Toast.LENGTH_LONG).show();
+			Toast.makeText(ItemListActivity.this, "虚拟关机按钮", Toast.LENGTH_LONG)
+					.show();
 		}
 	}
 
@@ -181,7 +187,8 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 		@Override
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
-				Toast.makeText(ItemListActivity.this, "娓╁害璋冩暣鍒�" + view.getValue(), Toast.LENGTH_SHORT).show();
+				Toast.makeText(ItemListActivity.this,
+						"温度已经改变�" + view.getValue(), Toast.LENGTH_SHORT).show();
 			}
 		}
 	}
@@ -194,9 +201,14 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 	 */
 	private class ModeSpinnerSelectedListener implements OnItemSelectedListener {
 		@Override
-		public void onItemSelected(AdapterView<?> adapterView, View view, int position, long arg3) {
-			Toast.makeText(ItemListActivity.this, "閫夋嫨浜�" + modeSpinnerAdapter.getItem(position), Toast.LENGTH_SHORT)
-			        .show();
+		public void onItemSelected(AdapterView<?> adapterView, View view,
+				int position, long arg3) {
+			/*
+			 * Toast.makeText(ItemListActivity.this, "模式切换至" +
+			 * modeSpinnerAdapter.getItem(position), Toast.LENGTH_SHORT).show();
+			 * TextView tv = (TextView) view;
+			 * tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL);
+			 */
 		}
 
 		@Override
@@ -215,7 +227,8 @@ public class ItemListActivity extends FragmentActivity implements ItemListFragme
 		@Override
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
-				Toast.makeText(ItemListActivity.this, "鍔熺巼璋冩暣鍒�" + view.getValue(), Toast.LENGTH_SHORT).show();
+				Toast.makeText(ItemListActivity.this,
+						"能量已经改变" + view.getValue(), Toast.LENGTH_SHORT).show();
 			}
 		}
 	}
