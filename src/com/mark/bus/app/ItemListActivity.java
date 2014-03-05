@@ -42,12 +42,19 @@ public class ItemListActivity extends FragmentActivity implements
 	// private boolean mTwoPane;
 
 	private ImageButton shutdownButton;
-	private NumberPicker temperature;
+	// private NumberPicker temperature;
 
 	private Spinner modeSpinner;
 	private ArrayAdapter<String> modeSpinnerAdapter;
 
-	private NumberPicker powerPicker;
+	// private NumberPicker powerPicker;
+	private ImageButton acUpButton;
+	private ImageButton acDownButton;
+	private ImageButton powerUpButton;
+	private ImageButton powerDownButton;
+
+	private TextView ac_text;
+	private TextView power_text;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,12 +87,13 @@ public class ItemListActivity extends FragmentActivity implements
 		shutdownButton = (ImageButton) findViewById(R.id.item_list_shutdown);
 		shutdownButton.setOnClickListener(new ShutdownListener());
 
-		//temperature = (NumberPicker) findViewById(R.id.item_list_temprature_picker);
-		//temperature.setMaxValue(35);
-		//temperature.setMinValue(16);
-		//temperature.setWrapSelectorWheel(false);
-		//temperature.setOnScrollListener(new TemperatureChangeListener());
-		//temperature.setFocusable(false);
+		// temperature = (NumberPicker)
+		// findViewById(R.id.item_list_temprature_picker);
+		// temperature.setMaxValue(35);
+		// temperature.setMinValue(16);
+		// temperature.setWrapSelectorWheel(false);
+		// temperature.setOnScrollListener(new TemperatureChangeListener());
+		// temperature.setFocusable(false);
 
 		modeSpinner = (Spinner) findViewById(R.id.item_list_temprature_mode_spinner);
 		modeSpinnerAdapter = new ArrayAdapter<String>(this,
@@ -95,14 +103,72 @@ public class ItemListActivity extends FragmentActivity implements
 		modeSpinner
 				.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
 
-		powerPicker = (NumberPicker) findViewById(R.id.item_list_power_picker);
-		int minValue = 500;
-		int maxValue = 3000;
+		// powerPicker = (NumberPicker)
+		// findViewById(R.id.item_list_power_picker);
+		// int minValue = 500;
+		// int maxValue = 3000;
 		// String[] valueSet = genPowerDisplays(minValue, maxValue);
-		powerPicker.setMinValue(minValue);
-		powerPicker.setMaxValue(maxValue);
-		powerPicker.setFocusable(false);
-		powerPicker.setOnScrollListener(new PowerChangeListener());
+		// powerPicker.setMinValue(minValue);
+		// powerPicker.setMaxValue(maxValue);
+		// powerPicker.setFocusable(false);
+		// powerPicker.setOnScrollListener(new PowerChangeListener());
+		acUpButton = (ImageButton) this.findViewById(R.id.ac_uparrow);
+		acDownButton = (ImageButton) this.findViewById(R.id.ac_downarrow);
+		powerUpButton = (ImageButton) this.findViewById(R.id.power_uparrow);
+		powerDownButton = (ImageButton) this.findViewById(R.id.power_downarrow);
+
+		ac_text = (TextView) this.findViewById(R.id.ac_text);
+		power_text = (TextView) this.findViewById(R.id.power_text);
+
+		acUpButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				String con = ac_text.getText().toString();
+				int temperature = new Integer(con).intValue();
+				// int temperature = new Integer(ac_text.getText().toString());
+				temperature += 1;
+				String tx = new Integer(temperature).toString();
+
+				ac_text.setText(tx);
+
+			}
+		});
+		acDownButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				String con = ac_text.getText().toString();
+				int temperature = new Integer(con).intValue();
+				// int temperature = new Integer(ac_text.getText().toString());
+				temperature -= 1;
+				String tx = new Integer(temperature).toString();
+
+				ac_text.setText(tx);
+
+			}
+		});
+		powerUpButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				String con = power_text.getText().toString();
+				int power = new Integer(con).intValue();
+				// int temperature = new Integer(ac_text.getText().toString());
+				power += 100;
+				String tx = new Integer(power).toString();
+
+				power_text.setText(tx);
+
+			}
+		});
+		powerDownButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				String con = power_text.getText().toString();
+				int power = new Integer(con).intValue();
+				// int temperature = new Integer(ac_text.getText().toString());
+				power -= 100;
+				String tx = new Integer(power).toString();
+
+				power_text.setText(tx);
+
+			}
+		});
+
 	}
 
 	/**
