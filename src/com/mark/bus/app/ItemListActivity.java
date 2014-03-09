@@ -81,7 +81,7 @@ public class ItemListActivity extends FragmentActivity implements
 	}
 
 	/**
-	 * 鍒濆鍖栬鍥惧璞�
+	 * 閸掓繂顬婇崠鏍瀰閸ユ儳顕挒锟�
 	 */
 	private void bindAllViews() {
 		shutdownButton = (ImageButton) findViewById(R.id.item_list_shutdown);
@@ -98,7 +98,7 @@ public class ItemListActivity extends FragmentActivity implements
 		modeSpinner = (Spinner) findViewById(R.id.item_list_temprature_mode_spinner);
 		modeSpinnerAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_dropdown_item_1line, new String[] {
-						"    模式1", "    模式2", "    模式3" });
+						"模式1", "模式2", "模式3" });
 		modeSpinner.setAdapter(modeSpinnerAdapter);
 		modeSpinner
 				.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
@@ -238,13 +238,13 @@ public class ItemListActivity extends FragmentActivity implements
 	private class ShutdownListener implements OnClickListener {
 		@Override
 		public void onClick(View v) {
-			Toast.makeText(ItemListActivity.this, "虚拟关机按钮", Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(ItemListActivity.this, "铏氭嫙鍏虫満鎸夐挳",
+					Toast.LENGTH_LONG).show();
 		}
 	}
 
 	/**
-	 * 娓╁害璋冭妭
+	 * 濞撯晛瀹崇拫鍐Ν
 	 * 
 	 * @author emerson
 	 * 
@@ -254,13 +254,13 @@ public class ItemListActivity extends FragmentActivity implements
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
 				Toast.makeText(ItemListActivity.this,
-						"温度已经改变�" + view.getValue(), Toast.LENGTH_SHORT).show();
+						"温度已经调整至" + view.getValue(), Toast.LENGTH_SHORT).show();
 			}
 		}
 	}
 
 	/**
-	 * 妯″紡閫夋嫨
+	 * 濡�绱￠柅澶嬪
 	 * 
 	 * @author emerson
 	 * 
@@ -270,7 +270,7 @@ public class ItemListActivity extends FragmentActivity implements
 		public void onItemSelected(AdapterView<?> adapterView, View view,
 				int position, long arg3) {
 			/*
-			 * Toast.makeText(ItemListActivity.this, "模式切换至" +
+			 * Toast.makeText(ItemListActivity.this, "妯″紡鍒囨崲鑷� +
 			 * modeSpinnerAdapter.getItem(position), Toast.LENGTH_SHORT).show();
 			 * TextView tv = (TextView) view;
 			 * tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL);
@@ -284,7 +284,7 @@ public class ItemListActivity extends FragmentActivity implements
 	}
 
 	/**
-	 * 鍔熺巼璋冭妭
+	 * 閸旂喓宸肩拫鍐Ν
 	 * 
 	 * @author emerson
 	 * 
@@ -294,7 +294,8 @@ public class ItemListActivity extends FragmentActivity implements
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
 				Toast.makeText(ItemListActivity.this,
-						"能量已经改变" + view.getValue(), Toast.LENGTH_SHORT).show();
+						"鑳介噺宸茬粡鏀瑰彉" + view.getValue(), Toast.LENGTH_SHORT)
+						.show();
 			}
 		}
 	}
