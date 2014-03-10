@@ -18,16 +18,17 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 	private boolean mbLoop = false;
 	private boolean clearFlag = false;
 	private int a;
-	// ¶¨ÒåSurfaceHolder¶ÔÏó
+	private static int[] drawdata = new int[20];
+	// ï¿½ï¿½ï¿½ï¿½SurfaceHolderï¿½ï¿½ï¿½ï¿½
 	private SurfaceHolder mSurfaceHolder = null;
 
 	public MyView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
-		// ÊµÀý»¯SurfaceHolder
+		// Êµï¿½ï¿½SurfaceHolder
 		mSurfaceHolder = this.getHolder();
 
-		// Ìí¼Ó»Øµ÷
+		// ï¿½ï¿½Ó»Øµï¿½
 		mSurfaceHolder.addCallback(this);
 		setZOrderOnTop(true);
 		mSurfaceHolder.setFormat(PixelFormat.TRANSLUCENT);
@@ -45,25 +46,51 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 	public void surfaceCreated(SurfaceHolder holder) {
 		mbLoop = true;
 
-		Thread th = new Thread(new Runnable() {
+		Thread readTh = new Thread(new Runnable() {
 
+			@Override
+			public void run() {
+				while (true) {
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+					synchronized (drawdata) {
+						int[] readData = { 1, 2, 1, 3, 1, 4, 1, 5, 7, 6, 8, 1,
+								2, 1, 3, 4, 7, 6, 8, 1 };
+						System.arraycopy(readData, 0, drawdata, 0, 20);
+					}
+				}
+			}
+		});
+		readTh.start();
+		Thread th = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				while (mbLoop) {
 					try {
-						Thread.sleep(3000);
+						Thread.sleep(1000);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
 
 					synchronized (mSurfaceHolder) {
-						DrawData();
+						int[] data = new int[20];
+						synchronized (drawdata) {
+							System.arraycopy(drawdata, 0, data, 0, 20);
+						}
+						for (int i = 0; i < data.length; i++) {
+							System.out.println(drawdata[i]);
+						}
+						DrawData(data);
 						a += 1;
 					}
 				}
 			}
 		});
 		th.start();
+
 	}
 
 	@Override
@@ -83,12 +110,12 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 		canvas.drawPaint(clipPaint);
 	}
 
-	// »æÍ¼·½·¨
-	private void DrawData() {
+	// ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+	private void DrawData(int[] data) {
 		if (mSurfaceHolder == null)
 			return;
 
-		// Ëø¶¨»­²¼£¬µÃµ½canvas
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½canvas
 		Canvas canvas = mSurfaceHolder.lockCanvas();
 		if (canvas == null) {
 			return;
@@ -101,39 +128,26 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 
 			return;
 		} else {
-			// »æÍ¼
+			// ï¿½ï¿½Í¼
 			mPaint.setAntiAlias(true);
 			mPaint.setColor(Color.GREEN);
-
-			// »æÖÆ¾ØÐÎ--ÇåÆÁ×÷ÓÃ
 
 			int left = this.getLeft();
 			int top = this.getTop();
 			int bottom = this.getBottom();
 			int right = this.getRight();
 
-			// canvas.drawRect(left, top, right, bottom, mPaint);
-			int b = a % 4;
-			switch (b) {
-			case 0:
-				mPaint.setColor(Color.RED);
-				break;
-			case 1:
-				mPaint.setColor(Color.BLUE);
-				break;
-			case 2:
-				mPaint.setColor(Color.BLACK);
-				break;
-			case 3:
-				mPaint.setColor(Color.GREEN);
-				break;
+			int hBase = 10;
+			int vBase = (bottom - top) / 10;
 
+			int length = data.length;
+			for (int i = 0; i < length - 1; i++) {
+				canvas.drawLine(i * hBase, data[i] * vBase, (i + 1) * hBase,
+						data[i + 1] * vBase, mPaint);
 			}
 
-			canvas.drawLine(0, 0, bottom - top, right - left, mPaint);
-
-			if (b == 3)
-				clearCanvas(canvas);
+			// canvas.drawRect(left, top, right, bottom, mPaint);
+			// canvas.drawLine(0, 0, right - left, bottom - top, mPaint);
 
 		}
 		mSurfaceHolder.unlockCanvasAndPost(canvas);

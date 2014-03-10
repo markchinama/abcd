@@ -294,7 +294,7 @@ public class ItemListActivity extends FragmentActivity implements
 		public void onScrollStateChange(NumberPicker view, int scrollState) {
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
 				Toast.makeText(ItemListActivity.this,
-						"鑳介噺宸茬粡鏀瑰彉" + view.getValue(), Toast.LENGTH_SHORT)
+						"点击虚拟关机按钮" + view.getValue(), Toast.LENGTH_SHORT)
 						.show();
 			}
 		}

@@ -114,14 +114,11 @@
         <com.mark.bus.app.MyView
             android:id="@+id/myView"
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
             android:background="@drawable/temp_kim_yongii" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:text="niubidaanniu" />
+       
     </LinearLayout>
 
 </RelativeLayout>
