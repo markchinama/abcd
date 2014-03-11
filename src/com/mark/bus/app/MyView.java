@@ -57,8 +57,11 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 						e.printStackTrace();
 					}
 					synchronized (drawdata) {
-						int[] readData = { 1, 2, 1, 3, 1, 4, 1, 5, 7, 6, 8, 1,
-								2, 1, 3, 4, 7, 6, 8, 1 };
+						int[] readData = new int[20];
+						for (int i = 0; i < readData.length; i++) {
+							readData[i] = (int) (Math.random() * 10);
+						}
+
 						System.arraycopy(readData, 0, drawdata, 0, 20);
 					}
 				}
@@ -70,7 +73,7 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 			public void run() {
 				while (mbLoop) {
 					try {
-						Thread.sleep(1000);
+						Thread.sleep(25);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
@@ -80,9 +83,7 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 						synchronized (drawdata) {
 							System.arraycopy(drawdata, 0, data, 0, 20);
 						}
-						for (int i = 0; i < data.length; i++) {
-							System.out.println(drawdata[i]);
-						}
+
 						DrawData(data);
 						a += 1;
 					}
@@ -141,16 +142,15 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 			int vBase = (bottom - top) / 10;
 
 			int length = data.length;
+			clearCanvas(canvas);
 			for (int i = 0; i < length - 1; i++) {
 				canvas.drawLine(i * hBase, data[i] * vBase, (i + 1) * hBase,
 						data[i + 1] * vBase, mPaint);
 			}
-
-			// canvas.drawRect(left, top, right, bottom, mPaint);
-			// canvas.drawLine(0, 0, right - left, bottom - top, mPaint);
-
 		}
+		// canvas.drawRect(left, top, right, bottom, mPaint);
+		// canvas.drawLine(0, 0, right - left, bottom - top, mPaint);
+
 		mSurfaceHolder.unlockCanvasAndPost(canvas);
 	}
-
 }
