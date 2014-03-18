@@ -80,9 +80,7 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 						synchronized (drawdata) {
 							System.arraycopy(drawdata, 0, data, 0, 20);
 						}
-						for (int i = 0; i < data.length; i++) {
-							System.out.println(drawdata[i]);
-						}
+
 						DrawData(data);
 						a += 1;
 					}
