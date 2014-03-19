@@ -59,6 +59,8 @@ public class ItemListActivity extends FragmentActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main_activity);
+		/*
 		setContentView(R.layout.activity_item_list);
 
 		bindAllViews();
@@ -78,11 +80,11 @@ public class ItemListActivity extends FragmentActivity implements
 		// }
 
 		// TODO: If exposing deep links into your app, handle intents here.
+		 * 
+		 */
 	}
 
-	/**
-	 * 閸掓繂顬婇崠鏍瀰閸ユ儳顕挒锟�
-	 */
+	
 	private void bindAllViews() {
 		shutdownButton = (ImageButton) findViewById(R.id.item_list_shutdown);
 		shutdownButton.setOnClickListener(new ShutdownListener());
