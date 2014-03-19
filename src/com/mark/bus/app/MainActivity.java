@@ -26,20 +26,28 @@ public class MainActivity extends Activity {
 		controlButton = (ImageButton) this.findViewById(R.id.controlbutton);
 		cameralButton = (ImageButton) this.findViewById(R.id.cameralbutton);
 		expertButton = (ImageButton) this.findViewById(R.id.expertbutton);
-
+		BusFragment bus_fragment = new BusFragment();
+		FragmentTransaction transaction = getFragmentManager()
+				.beginTransaction();
+		// Replace whatever is in the fragment_container view with this
+		// fragment,
+		// and add the transaction to the back stack
+		transaction.add(R.id.fragment_container, bus_fragment);
+		// transaction.addToBackStack(null);
+		// Commit the transaction
+		transaction.commit();
 		homeButton.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				System.out.println("123");
 				ButtonsFragment buttonsFragment = new ButtonsFragment();
 				FragmentTransaction transaction = getFragmentManager()
 						.beginTransaction();
 				// Replace whatever is in the fragment_container view with this
 				// fragment,
 				// and add the transaction to the back stack
-				transaction.replace(R.id.busfragment, buttonsFragment);
-				//transaction.addToBackStack(null);
+				transaction.replace(R.id.fragment_container, buttonsFragment);
+				// transaction.addToBackStack(null);
 				// Commit the transaction
 				transaction.commit();
 

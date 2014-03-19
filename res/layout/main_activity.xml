@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:background="@drawable/button_background"
         android:orientation="horizontal" >
 
@@ -43,15 +43,17 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:background="@drawable/temp_bus"
         android:orientation="horizontal" >
 
         <ProgressBar
             android:id="@+id/score_processbar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
             android:max="100"
             android:progress="78" >
         </ProgressBar>
@@ -59,20 +61,20 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
+        android:layout_height="112dp"
         android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/status_power_panel_battery"
             android:layout_width="120dp"
-            android:layout_height="150dp"
+            android:layout_height="fill_parent"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="40dp"
             android:src="@drawable/temp_battery" />
 
         <LinearLayout
             android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_height="fill_parent"
             android:layout_marginLeft="40dp"
             android:orientation="vertical" >
 
@@ -99,7 +101,7 @@
 
         <LinearLayout
             android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_height="fill_parent"
             android:layout_marginLeft="40dp"
             android:orientation="vertical" >
 
@@ -129,7 +131,7 @@
 
         <LinearLayout
             android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_height="fill_parent"
             android:layout_marginLeft="40dp"
             android:orientation="vertical" >
 
@@ -158,14 +160,17 @@
         <com.mark.bus.app.MyView
             android:id="@+id/myView"
             android:layout_width="200dp"
-            android:layout_height="150dp"
+            android:layout_height="fill_parent"
             android:layout_marginLeft="40dp"
             android:background="@drawable/temp_kim_yongii" />
     </LinearLayout>
-  <fragment android:name="com.mark.bus.app.BusFragment"  
-             android:id="@+id/busfragment"  
-             android:layout_width="fill_parent"  
-             android:layout_height="fill_parent">
-      
-  </fragment>
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
 </LinearLayout>
