@@ -3,9 +3,11 @@ package com.mark.bus.app;
 import com.mark.bus.R;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 public class MainActivity extends Activity {
@@ -15,6 +17,8 @@ public class MainActivity extends Activity {
 	private ImageButton controlButton;
 	private ImageButton cameralButton;
 	private ImageButton expertButton;
+	BusFragment busFragment = new BusFragment();
+	ButtonsFragment buttonsFragment = new ButtonsFragment();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,32 +30,39 @@ public class MainActivity extends Activity {
 		controlButton = (ImageButton) this.findViewById(R.id.controlbutton);
 		cameralButton = (ImageButton) this.findViewById(R.id.cameralbutton);
 		expertButton = (ImageButton) this.findViewById(R.id.expertbutton);
-		BusFragment bus_fragment = new BusFragment();
+		controlButton.setOnClickListener(new TopbuttonListener());
+		homeButton.setOnClickListener(new TopbuttonListener());
+		showFragment(busFragment);
+
+	}
+
+	public void showFragment(Fragment fragment) {
 		FragmentTransaction transaction = getFragmentManager()
 				.beginTransaction();
 		// Replace whatever is in the fragment_container view with this
 		// fragment,
 		// and add the transaction to the back stack
-		transaction.add(R.id.fragment_container, bus_fragment);
+		transaction.replace(R.id.fragment_container, fragment);
 		// transaction.addToBackStack(null);
 		// Commit the transaction
 		transaction.commit();
-		homeButton.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
-				ButtonsFragment buttonsFragment = new ButtonsFragment();
-				FragmentTransaction transaction = getFragmentManager()
-						.beginTransaction();
-				// Replace whatever is in the fragment_container view with this
-				// fragment,
-				// and add the transaction to the back stack
-				transaction.replace(R.id.fragment_container, buttonsFragment);
-				// transaction.addToBackStack(null);
-				// Commit the transaction
-				transaction.commit();
+	}
 
+	class TopbuttonListener implements OnClickListener {
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			if (v.equals(controlButton)) {
+				showFragment(buttonsFragment);
+				return;
 			}
-		});
+			if (v.equals(homeButton)) {
+				showFragment(busFragment);
+				return;
+			}
+		}
+
 	}
 }
