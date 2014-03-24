@@ -1,5 +1,8 @@
 package com.mark.bus.app;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.mark.bus.R;
 import android.app.Activity;
 import android.app.Fragment;
@@ -39,6 +42,9 @@ public class MainActivity extends Activity {
 	private TextView ac_text;
 	private TextView power_text;
 
+	private Map<ImageButton, Integer> pressedBackGround = new HashMap();
+	private Map<ImageButton, Integer> unpressedBackGround = new HashMap();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -49,8 +55,24 @@ public class MainActivity extends Activity {
 		controlButton = (ImageButton) this.findViewById(R.id.controlbutton);
 		cameralButton = (ImageButton) this.findViewById(R.id.cameralbutton);
 		expertButton = (ImageButton) this.findViewById(R.id.expertbutton);
+
+		pressedBackGround.put(infoButton, R.drawable.button_bus_info_pressed);
+		pressedBackGround.put(controlButton,
+				R.drawable.button_bus_control_pressed);
+		pressedBackGround.put(cameralButton,
+				R.drawable.button_bus_cameral_pressed);
+		pressedBackGround.put(expertButton,
+				R.drawable.button_bus_expert_pressed);
+
+		unpressedBackGround.put(infoButton, R.drawable.button_bus_info);
+		unpressedBackGround.put(controlButton, R.drawable.button_bus_control);
+		unpressedBackGround.put(cameralButton, R.drawable.button_bus_cameral);
+		unpressedBackGround.put(expertButton, R.drawable.button_bus_expert);
+
 		controlButton.setOnClickListener(new TopbuttonListener());
-		homeButton.setOnClickListener(new TopbuttonListener());
+		infoButton.setOnClickListener(new TopbuttonListener());
+		cameralButton.setOnClickListener(new TopbuttonListener());
+		expertButton.setOnClickListener(new TopbuttonListener());
 
 		bindAllUI();
 		showFragment(busFragment);
@@ -136,16 +158,29 @@ public class MainActivity extends Activity {
 
 	}
 
+	public void showPress(View v) {
+
+		for (ImageButton ib : unpressedBackGround.keySet()) {
+			if (!v.equals(ib)) {
+				ib.setBackgroundResource(unpressedBackGround.get(ib));
+			}
+		}
+		v.setBackgroundResource(pressedBackGround.get(v));
+
+	}
+
 	class TopbuttonListener implements OnClickListener {
 
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
+			showPress(v);
 			if (v.equals(controlButton)) {
 				showFragment(buttonsFragment);
 				return;
 			}
-			if (v.equals(homeButton)) {
+			if (v.equals(infoButton)) {
+				v.setBackgroundResource(R.drawable.button_bus_info_pressed);
 				showFragment(busFragment);
 				return;
 			}

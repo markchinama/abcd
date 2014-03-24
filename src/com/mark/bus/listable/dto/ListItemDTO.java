@@ -3,7 +3,7 @@ package com.mark.bus.listable.dto;
 public class ListItemDTO {
 	int id;
 	int imageId;
-	String text;
+	String  text;
 
 	public ListItemDTO(int id, int imageId, String text) {
 		this.id = id;
