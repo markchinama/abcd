@@ -13,52 +13,61 @@
         <ImageButton
             android:id="@+id/homebutton"
             android:layout_width="160dp"
-            android:layout_marginLeft="40dp"
             android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
             android:background="@drawable/button_home" />
 
         <ImageButton
             android:id="@+id/infobutton"
             android:layout_width="160dp"
-            android:layout_marginLeft="40dp"
             android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
             android:background="@drawable/button_bus_info" />
 
         <ImageButton
             android:id="@+id/controlbutton"
             android:layout_width="160dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/button_bus_control" />
 
         <ImageButton
             android:id="@+id/cameralbutton"
             android:layout_width="160dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/button_bus_cameral" />
 
         <ImageButton
             android:id="@+id/expertbutton"
             android:layout_width="184dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/button_bus_expert" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="500dp"
-        android:background="@drawable/temp_bus"
+        android:layout_height="650dp"
+        android:background="@drawable/bus"
         android:orientation="horizontal" >
+
+        <ImageButton
+            android:id ="@+id/model_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/eco" >
+        </ImageButton>
 
         <ProgressBar
             android:id="@+id/score_processbar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="300dp"
+            android:layout_width="350dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
             android:max="100"
             android:progress="78"
             android:progressDrawable="@drawable/score" >
@@ -178,6 +187,7 @@
         android:layout_marginTop="0dp"
         android:orientation="vertical" >
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
@@ -276,7 +286,7 @@
 
         <!-- 功率 完 -->
 
-       <LinearLayout
+        <LinearLayout
             android:layout_width="187dp"
             android:layout_height="fill_parent"
             android:orientation="vertical" >

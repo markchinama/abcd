@@ -23,7 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- 
+        <activity
+            android:name="com.mark.bus.app.ModelActivity"
+            android:label="abc"
+            android:theme="@style/Theme.Model" >
+        </activity>
+        <!--
         <activity
             android:name="com.mark.bus.app.ItemDetailActivity"
             android:label="@string/title_item_detail"
@@ -31,8 +36,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ItemListActivity" />
-        </activity>
-         -->
+        </activity>
+        -->
     </application>
 
 </manifest>

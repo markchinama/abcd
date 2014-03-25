@@ -7,6 +7,7 @@ import com.mark.bus.R;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,6 +25,7 @@ public class MainActivity extends Activity {
 	private ImageButton controlButton;
 	private ImageButton cameralButton;
 	private ImageButton expertButton;
+	private ImageButton model_btn;
 	BusFragment busFragment = new BusFragment();
 	ButtonsFragment buttonsFragment = new ButtonsFragment();
 
@@ -50,6 +52,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_activity);
+		model_btn = (ImageButton) this.findViewById(R.id.model_btn);
 		homeButton = (ImageButton) this.findViewById(R.id.homebutton);
 		infoButton = (ImageButton) this.findViewById(R.id.infobutton);
 		controlButton = (ImageButton) this.findViewById(R.id.controlbutton);
@@ -69,6 +72,7 @@ public class MainActivity extends Activity {
 		unpressedBackGround.put(cameralButton, R.drawable.button_bus_cameral);
 		unpressedBackGround.put(expertButton, R.drawable.button_bus_expert);
 
+		model_btn.setOnClickListener(new ModelButtonListner());
 		controlButton.setOnClickListener(new TopbuttonListener());
 		infoButton.setOnClickListener(new TopbuttonListener());
 		cameralButton.setOnClickListener(new TopbuttonListener());
@@ -166,6 +170,17 @@ public class MainActivity extends Activity {
 			}
 		}
 		v.setBackgroundResource(pressedBackGround.get(v));
+
+	}
+
+	class ModelButtonListner implements OnClickListener {
+
+		public void onClick(View v) {
+			Intent intent = new Intent(MainActivity.this, ModelActivity.class);
+
+			MainActivity.this.startActivity(intent);
+
+		}
 
 	}
 
