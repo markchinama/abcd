@@ -5,17 +5,27 @@ import com.mark.bus.app.MainActivity.ModelHandler;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
 public class ModelActivity extends Activity {
 
-	private ImageButton ecomodelbutton;
-
+	private ImageButton ecoModelButton;
+	private ImageButton normalModelButton;
+	private ImageButton powerModelButton;
+	private ImageButton snowModelButton;
 	BusApplication ba = null;
 	ModelHandler mHandler = null;
+
+	int[] source = { R.drawable.eco_model_btn,
+			R.drawable.eco_model_btn_selected, R.drawable.normal_model_btn,
+			R.drawable.normal_model_btn_selectd, R.drawable.power_model_btn,
+			R.drawable.power_model_btn_selected, R.drawable.snow_model_btn,
+			R.drawable.snow_model_btn_selectd };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +40,42 @@ public class ModelActivity extends Activity {
 		wl.x = -180;
 		wl.y = -250;
 		window.setAttributes(wl);
-		ecomodelbutton = (ImageButton) this.findViewById(R.id.ecomodelbutton);
-		ecomodelbutton.setOnClickListener(new View.OnClickListener() {
+		ecoModelButton = (ImageButton) findViewById(R.id.ecomodelbutton);
+		normalModelButton = (ImageButton) findViewById(R.id.normalmodelbutton);
+		powerModelButton = (ImageButton) findViewById(R.id.powermodelbutton);
+		snowModelButton = (ImageButton) findViewById(R.id.snowmodelbutton);
 
-			@Override
-			public void onClick(View v) {
-				ba = (BusApplication) getApplication();
-				mHandler = ba.getHandler();
-				mHandler.sendEmptyMessage(1);
-				finish();
-
-			}
-		});
-
+		ecoModelButton.setOnTouchListener(new ModelButtonClickListner(0));
+		normalModelButton.setOnTouchListener(new ModelButtonClickListner(1));
+		powerModelButton.setOnTouchListener(new ModelButtonClickListner(2));
+		snowModelButton.setOnTouchListener(new ModelButtonClickListner(3));
 	}
 
+	class ModelButtonClickListner implements OnTouchListener {
+
+		private int btnId;
+
+		ModelButtonClickListner(int id) {
+			this.btnId = id;
+		}
+
+		@Override
+		public boolean onTouch(View v, MotionEvent event) {
+			if (event.getAction() == MotionEvent.ACTION_DOWN) {
+				v.setBackgroundResource(source[btnId * 2 + 1]);
+			} else if (event.getAction() == MotionEvent.ACTION_UP) {
+				v.setBackgroundResource(source[btnId * 2]);
+				ba = (BusApplication) getApplication();
+				mHandler = ba.getHandler();
+				mHandler.sendEmptyMessage(btnId);
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+				}
+				finish();
+			}
+			return false;
+		}
+
+	}
 }

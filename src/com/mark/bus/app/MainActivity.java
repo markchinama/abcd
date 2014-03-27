@@ -52,6 +52,8 @@ public class MainActivity extends Activity {
 	private BusApplication ba = null;
 
 	private ModelHandler modelHandler = new ModelHandler();
+	int[] bgSource = { R.drawable.eco, R.drawable.normal, R.drawable.power,
+			R.drawable.snow };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -234,7 +236,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void handleMessage(Message msg) {
 
-			System.out.println("get i" + msg.what);
+			model_btn.setBackgroundResource(bgSource[msg.what]);
 		}
 	}
 }
