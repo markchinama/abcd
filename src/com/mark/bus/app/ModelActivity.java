@@ -1,6 +1,7 @@
 package com.mark.bus.app;
 
 import com.mark.bus.R;
+import com.mark.bus.app.MainActivity.ModelHandler;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,6 +13,9 @@ import android.widget.ImageButton;
 public class ModelActivity extends Activity {
 
 	private ImageButton ecomodelbutton;
+
+	BusApplication ba = null;
+	ModelHandler mHandler = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,9 @@ public class ModelActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+				ba = (BusApplication) getApplication();
+				mHandler = ba.getHandler();
+				mHandler.sendEmptyMessage(1);
 				finish();
 
 			}

@@ -9,6 +9,8 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -47,6 +49,10 @@ public class MainActivity extends Activity {
 	private Map<ImageButton, Integer> pressedBackGround = new HashMap();
 	private Map<ImageButton, Integer> unpressedBackGround = new HashMap();
 
+	private BusApplication ba = null;
+
+	private ModelHandler modelHandler = new ModelHandler();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -71,7 +77,7 @@ public class MainActivity extends Activity {
 		unpressedBackGround.put(controlButton, R.drawable.button_bus_control);
 		unpressedBackGround.put(cameralButton, R.drawable.button_bus_cameral);
 		unpressedBackGround.put(expertButton, R.drawable.button_bus_expert);
-
+		ba = (BusApplication) getApplication();
 		model_btn.setOnClickListener(new ModelButtonListner());
 		controlButton.setOnClickListener(new TopbuttonListener());
 		infoButton.setOnClickListener(new TopbuttonListener());
@@ -176,6 +182,8 @@ public class MainActivity extends Activity {
 	class ModelButtonListner implements OnClickListener {
 
 		public void onClick(View v) {
+
+			ba.setHandler(modelHandler);
 			Intent intent = new Intent(MainActivity.this, ModelActivity.class);
 
 			MainActivity.this.startActivity(intent);
@@ -219,6 +227,14 @@ public class MainActivity extends Activity {
 		public void onNothingSelected(AdapterView<?> parent) {
 			// TODO Auto-generated method stub
 
+		}
+	}
+
+	final class ModelHandler extends Handler {
+		@Override
+		public void handleMessage(Message msg) {
+
+			System.out.println("get i" + msg.what);
 		}
 	}
 }
