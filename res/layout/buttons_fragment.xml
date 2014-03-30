@@ -18,12 +18,12 @@
             android:background="@drawable/front_fog" />
 
         <ImageButton
-            android:id="@+id/button_back_fog"
+            android:id="@+id/button_rear_fog"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/back_fog" />
+            android:background="@drawable/rear_fog" />
 
         <ImageButton
             android:id="@+id/button_hyperbaric_cabin"
@@ -31,7 +31,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/hyperbaric_cabin" />
+            android:background="@drawable/hyperbaric_cabin_on" />
 
         <ImageButton
             android:id="@+id/button_root_light"
@@ -86,6 +86,14 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/right_turning" />
+
+        <ImageButton
+            android:id="@+id/none"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/none" />
     </LinearLayout>
 
 </LinearLayout>

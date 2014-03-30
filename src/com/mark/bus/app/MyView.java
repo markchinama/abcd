@@ -139,7 +139,7 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
 			int right = this.getRight();
 
 			int hBase = 10;
-			int vBase = (bottom - top) / 10;
+			int vBase = (bottom - top) / 20;
 
 			int length = data.length;
 			clearCanvas(canvas);

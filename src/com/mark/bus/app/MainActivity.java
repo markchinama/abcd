@@ -16,6 +16,7 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -54,6 +55,8 @@ public class MainActivity extends Activity {
 	private ModelHandler modelHandler = new ModelHandler();
 	int[] bgSource = { R.drawable.eco, R.drawable.normal, R.drawable.power,
 			R.drawable.snow };
+	
+	private SeekBar sb ;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +89,8 @@ public class MainActivity extends Activity {
 		cameralButton.setOnClickListener(new TopbuttonListener());
 		expertButton.setOnClickListener(new TopbuttonListener());
 
+		sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
+		/*http://blog.csdn.net/aidesudi/article/details/6608700*/
 		bindAllUI();
 		showFragment(busFragment);
 
