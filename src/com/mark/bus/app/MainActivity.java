@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
 		cameralButton.setOnClickListener(new TopbuttonListener());
 		expertButton.setOnClickListener(new TopbuttonListener());
 
-		sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
+		//sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
 		/*http://blog.csdn.net/aidesudi/article/details/6608700*/
 		bindAllUI();
 		showFragment(busFragment);
@@ -105,13 +105,12 @@ public class MainActivity extends Activity {
 
 		ac_text = (TextView) this.findViewById(R.id.ac_text);
 		power_text = (TextView) this.findViewById(R.id.power_text);
-		modeSpinner = (Spinner) findViewById(R.id.item_list_temprature_mode_spinner);
+		//modeSpinner = (Spinner) findViewById(R.id.item_list_temprature_mode_spinner);
 		modeSpinnerAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_dropdown_item_1line, new String[] {
 						"模式1", "模式2", "模式3" });
-		modeSpinner.setAdapter(modeSpinnerAdapter);
-		modeSpinner
-				.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
+		//modeSpinner.setAdapter(modeSpinnerAdapter);
+		//modeSpinner.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
 		acUpButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				String con = ac_text.getText().toString();
