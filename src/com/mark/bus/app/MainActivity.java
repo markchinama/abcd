@@ -16,6 +16,7 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 public class MainActivity extends Activity {
 
+	private static int currentTopButtonId = 0;
 	private ImageButton homeButton;
 	private ImageButton infoButton;
 	private ImageButton controlButton;
@@ -47,16 +49,24 @@ public class MainActivity extends Activity {
 	private TextView ac_text;
 	private TextView power_text;
 
-	private Map<ImageButton, Integer> pressedBackGround = new HashMap();
-	private Map<ImageButton, Integer> unpressedBackGround = new HashMap();
+	private int[] pressedBackGround = { R.drawable.button_bus_info_pressed,
+			R.drawable.button_bus_control_pressed,
+			R.drawable.button_bus_cameral_pressed,
+			R.drawable.button_bus_expert_pressed };
+	private int[] unpressedBackGround = { R.drawable.button_bus_info,
+			R.drawable.button_bus_control, R.drawable.button_bus_cameral,
+			R.drawable.button_bus_expert };
 
+	private ImageButton[] topButtons = new ImageButton[4];
 	private BusApplication ba = null;
 
 	private ModelHandler modelHandler = new ModelHandler();
 	int[] bgSource = { R.drawable.eco, R.drawable.normal, R.drawable.power,
 			R.drawable.snow };
+
+	private SeekBar sb;
 	
-	private SeekBar sb ;
+	private LinearLayout airBg;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -69,28 +79,20 @@ public class MainActivity extends Activity {
 		controlButton = (ImageButton) this.findViewById(R.id.controlbutton);
 		cameralButton = (ImageButton) this.findViewById(R.id.cameralbutton);
 		expertButton = (ImageButton) this.findViewById(R.id.expertbutton);
-
-		pressedBackGround.put(infoButton, R.drawable.button_bus_info_pressed);
-		pressedBackGround.put(controlButton,
-				R.drawable.button_bus_control_pressed);
-		pressedBackGround.put(cameralButton,
-				R.drawable.button_bus_cameral_pressed);
-		pressedBackGround.put(expertButton,
-				R.drawable.button_bus_expert_pressed);
-
-		unpressedBackGround.put(infoButton, R.drawable.button_bus_info);
-		unpressedBackGround.put(controlButton, R.drawable.button_bus_control);
-		unpressedBackGround.put(cameralButton, R.drawable.button_bus_cameral);
-		unpressedBackGround.put(expertButton, R.drawable.button_bus_expert);
+		topButtons[0] = infoButton;
+		topButtons[1] = controlButton;
+		topButtons[2] = cameralButton;
+		topButtons[3] = expertButton;
 		ba = (BusApplication) getApplication();
 		model_btn.setOnClickListener(new ModelButtonListner());
-		controlButton.setOnClickListener(new TopbuttonListener());
-		infoButton.setOnClickListener(new TopbuttonListener());
-		cameralButton.setOnClickListener(new TopbuttonListener());
-		expertButton.setOnClickListener(new TopbuttonListener());
+		infoButton.setOnClickListener(new TopbuttonListener(0));
+		controlButton.setOnClickListener(new TopbuttonListener(1));
+		cameralButton.setOnClickListener(new TopbuttonListener(2));
+		expertButton.setOnClickListener(new TopbuttonListener(3));
 
-		//sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
-		/*http://blog.csdn.net/aidesudi/article/details/6608700*/
+		airBg = (LinearLayout)this.findViewById(R.id.air_bg);
+		// sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
+		/* http://blog.csdn.net/aidesudi/article/details/6608700 */
 		bindAllUI();
 		showFragment(busFragment);
 
@@ -105,12 +107,14 @@ public class MainActivity extends Activity {
 
 		ac_text = (TextView) this.findViewById(R.id.ac_text);
 		power_text = (TextView) this.findViewById(R.id.power_text);
-		//modeSpinner = (Spinner) findViewById(R.id.item_list_temprature_mode_spinner);
+		// modeSpinner = (Spinner)
+		// findViewById(R.id.item_list_temprature_mode_spinner);
 		modeSpinnerAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_dropdown_item_1line, new String[] {
 						"模式1", "模式2", "模式3" });
-		//modeSpinner.setAdapter(modeSpinnerAdapter);
-		//modeSpinner.setOnItemSelectedListener(new ModeSpinnerSelectedListener());
+		// modeSpinner.setAdapter(modeSpinnerAdapter);
+		// modeSpinner.setOnItemSelectedListener(new
+		// ModeSpinnerSelectedListener());
 		acUpButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				String con = ac_text.getText().toString();
@@ -156,6 +160,8 @@ public class MainActivity extends Activity {
 				String tx = new Integer(power).toString();
 
 				power_text.setText(tx);
+				
+				airBg.setBackgroundResource(R.drawable.power_down_click);
 
 			}
 		});
@@ -174,15 +180,14 @@ public class MainActivity extends Activity {
 
 	}
 
-	public void showPress(View v) {
+	public void showPress(int id) {
+		if (currentTopButtonId != id) {
+			topButtons[currentTopButtonId]
+					.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+			topButtons[id].setBackgroundResource(pressedBackGround[id]);
 
-		for (ImageButton ib : unpressedBackGround.keySet()) {
-			if (!v.equals(ib)) {
-				ib.setBackgroundResource(unpressedBackGround.get(ib));
-			}
+			currentTopButtonId = id;
 		}
-		v.setBackgroundResource(pressedBackGround.get(v));
-
 	}
 
 	class ModelButtonListner implements OnClickListener {
@@ -200,10 +205,16 @@ public class MainActivity extends Activity {
 
 	class TopbuttonListener implements OnClickListener {
 
+		private int bid;
+
+		TopbuttonListener(int id) {
+			bid = id;
+		}
+
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			showPress(v);
+			showPress(bid);
 			if (v.equals(controlButton)) {
 				showFragment(buttonsFragment);
 				return;

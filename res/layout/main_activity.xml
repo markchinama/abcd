@@ -233,6 +233,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/air_bg"
         android:layout_width="fill_parent"
         android:layout_height="133px"
         android:background="@drawable/airbg"
@@ -301,54 +302,35 @@
 
         <!-- 横杆 温度调节 -->
 
-        <AbsoluteLayout
-            android:layout_width="200px"
+        <LinearLayout
+            android:layout_width="160px"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="40px" >
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="22 C" />
-
-            <ImageView
-                android:id="@+id/measure"
-                android:layout_width="200px"
-                android:layout_height="wrap_content"
-                android:layout_x="10px"
-                android:layout_y="80px"
-                android:src="@drawable/fan_value_bg"
-               >
-            </ImageView>
+            android:layout_marginLeft="110px" >
 
             <SeekBar
                 android:id="@+id/item_list_temprature_seekbar"
-                android:layout_width="200px"
+                android:layout_width="140px"
                 android:layout_height="20px"
-                android:layout_x="10px"
-                android:layout_y="80px"
-                android:maxHeight="4dip" />
+                android:layout_marginTop="98px"
+                android:maxHeight="10dip" />
             <!-- 横杆 温度调节 完 -->
 
 
             <!-- 功率 -->
-        </AbsoluteLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/item_list_power_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/item_list_temprature_text"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60px"
             android:text="功率"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <!-- 功率 完 -->
 
         <LinearLayout
-            android:layout_width="187dp"
+            android:layout_width="100px"
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 
@@ -356,22 +338,31 @@
                 android:id="@+id/power_uparrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20px"
-                android:src="@drawable/uparrow" />
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:background="@drawable/uparrow"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/power_text"
-                android:layout_width="wrap_content"
+                android:layout_width="50px"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20px"
+                android:background="@drawable/numberbg"
+                android:gravity="center"
                 android:text="1000"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+                android:textColor="#ffffff"
+                android:textSize="10px" />
 
             <ImageButton
                 android:id="@+id/power_downarrow"
-                android:layout_width="187dp"
-                android:layout_height="40dp"
-                android:src="@drawable/downarrow" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20px"
+                android:background="@drawable/downarrow"
+                android:gravity="center" />
         </LinearLayout>
     </LinearLayout>
 
