@@ -11,8 +11,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
@@ -37,7 +40,7 @@ public class MainActivity extends Activity {
 	private ImageButton shutdownButton;
 	// private NumberPicker temperature;
 
-	private Spinner modeSpinner;
+	// private Spinner modeSpinner;
 	private ArrayAdapter<String> modeSpinnerAdapter;
 
 	// private NumberPicker powerPicker;
@@ -49,6 +52,9 @@ public class MainActivity extends Activity {
 	private TextView ac_text;
 	private TextView power_text;
 
+	private ImageButton listHomeButton;
+	private ImageButton acShowDownButton;
+	private ImageButton acModelButton;
 	private int[] pressedBackGround = { R.drawable.button_bus_info_pressed,
 			R.drawable.button_bus_control_pressed,
 			R.drawable.button_bus_cameral_pressed,
@@ -57,6 +63,12 @@ public class MainActivity extends Activity {
 			R.drawable.button_bus_control, R.drawable.button_bus_cameral,
 			R.drawable.button_bus_expert };
 
+	private int[] airOnTouchBg = { R.drawable.home_click, R.drawable.air_on,
+			R.drawable.ac_up_click, R.drawable.ac_down_click,
+			R.drawable.model_click, R.drawable.power_up_click,
+			R.drawable.power_down_click
+
+	};
 	private ImageButton[] topButtons = new ImageButton[4];
 	private BusApplication ba = null;
 
@@ -65,13 +77,14 @@ public class MainActivity extends Activity {
 			R.drawable.snow };
 
 	private SeekBar sb;
-	
+
 	private LinearLayout airBg;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		getWindow().requestFeature(Window.FEATURE_NO_TITLE); 
 		setContentView(R.layout.main_activity);
 		model_btn = (ImageButton) this.findViewById(R.id.model_btn);
 		homeButton = (ImageButton) this.findViewById(R.id.homebutton);
@@ -90,7 +103,7 @@ public class MainActivity extends Activity {
 		cameralButton.setOnClickListener(new TopbuttonListener(2));
 		expertButton.setOnClickListener(new TopbuttonListener(3));
 
-		airBg = (LinearLayout)this.findViewById(R.id.air_bg);
+		airBg = (LinearLayout) this.findViewById(R.id.air_bg);
 		// sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
 		/* http://blog.csdn.net/aidesudi/article/details/6608700 */
 		bindAllUI();
@@ -107,14 +120,28 @@ public class MainActivity extends Activity {
 
 		ac_text = (TextView) this.findViewById(R.id.ac_text);
 		power_text = (TextView) this.findViewById(R.id.power_text);
+
+		acModelButton = (ImageButton) this.findViewById(R.id.ac_model);
+		listHomeButton = (ImageButton) this.findViewById(R.id.item_list_home);
+		acShowDownButton = (ImageButton) this.findViewById(R.id.ac_shut_down);
+
 		// modeSpinner = (Spinner)
 		// findViewById(R.id.item_list_temprature_mode_spinner);
-		modeSpinnerAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_dropdown_item_1line, new String[] {
-						"模式1", "模式2", "模式3" });
+		// modeSpinnerAdapter = new ArrayAdapter<String>(this,
+		// android.R.layout.simple_dropdown_item_1line, new String[] {
+		// "模式1", "模式2", "模式3" });
 		// modeSpinner.setAdapter(modeSpinnerAdapter);
 		// modeSpinner.setOnItemSelectedListener(new
 		// ModeSpinnerSelectedListener());
+		
+		listHomeButton.setOnTouchListener(new AirButtonOnTouchListener(0));
+		acShowDownButton.setOnTouchListener(new AirButtonOnTouchListener(1));
+		acUpButton.setOnTouchListener(new AirButtonOnTouchListener(2));
+		acDownButton.setOnTouchListener(new AirButtonOnTouchListener(3));
+		acModelButton.setOnTouchListener(new AirButtonOnTouchListener(4));
+		powerUpButton.setOnTouchListener(new AirButtonOnTouchListener(5));
+		powerDownButton.setOnTouchListener(new AirButtonOnTouchListener(6));
+
 		acUpButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				String con = ac_text.getText().toString();
@@ -160,11 +187,26 @@ public class MainActivity extends Activity {
 				String tx = new Integer(power).toString();
 
 				power_text.setText(tx);
-				
-				airBg.setBackgroundResource(R.drawable.power_down_click);
 
 			}
 		});
+	}
+
+	class AirButtonOnTouchListener implements OnTouchListener {
+		private int airId;
+
+		AirButtonOnTouchListener(int id) {
+			airId = id;
+		}
+
+		public boolean onTouch(View v, MotionEvent event) {
+			if (event.getAction() == MotionEvent.ACTION_DOWN) {
+				airBg.setBackgroundResource(airOnTouchBg[airId]);
+			} else if (event.getAction() == MotionEvent.ACTION_UP) {
+				airBg.setBackgroundResource(R.drawable.airbg);
+			}
+			return false;
+		}
 	}
 
 	public void showFragment(Fragment fragment) {
@@ -228,24 +270,23 @@ public class MainActivity extends Activity {
 
 	}
 
-	private class ModeSpinnerSelectedListener implements OnItemSelectedListener {
-		@Override
-		public void onItemSelected(AdapterView<?> adapterView, View view,
-				int position, long arg3) {
-			/*
-			 * Toast.makeText(ItemListActivity.this, "妯″紡鍒囨崲鑷� +
-			 * modeSpinnerAdapter.getItem(position), Toast.LENGTH_SHORT).show();
-			 * TextView tv = (TextView) view;
-			 * tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL);
-			 */
-		}
-
-		@Override
-		public void onNothingSelected(AdapterView<?> parent) {
-			// TODO Auto-generated method stub
-
-		}
-	}
+	/*
+	 * private class ModeSpinnerSelectedListener implements
+	 * OnItemSelectedListener {
+	 * 
+	 * @Override public void onItemSelected(AdapterView<?> adapterView, View
+	 * view, int position, long arg3) { /* Toast.makeText(ItemListActivity.this,
+	 * "妯″紡鍒囨崲鑷� + modeSpinnerAdapter.getItem(position),
+	 * Toast.LENGTH_SHORT).show(); TextView tv = (TextView) view;
+	 * tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL);
+	 * 
+	 * }
+	 * 
+	 * @Override public void onNothingSelected(AdapterView<?> parent) { // TODO
+	 * Auto-generated method stub
+	 * 
+	 * } }
+	 */
 
 	final class ModelHandler extends Handler {
 		@Override

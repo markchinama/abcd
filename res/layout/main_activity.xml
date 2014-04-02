@@ -233,6 +233,14 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="351px"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/air_bg"
         android:layout_width="fill_parent"
         android:layout_height="133px"
@@ -248,7 +256,7 @@
             android:background="@drawable/home" />
 
         <ImageButton
-            android:id="@+id/item_list_shutdown"
+            android:id="@+id/ac_shut_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="65px"
@@ -305,13 +313,21 @@
         <LinearLayout
             android:layout_width="160px"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="110px" >
+            android:layout_marginLeft="110px"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ac_model"
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:background="@drawable/ac_model" >
+            </ImageButton>
 
             <SeekBar
                 android:id="@+id/item_list_temprature_seekbar"
                 android:layout_width="140px"
                 android:layout_height="20px"
-                android:layout_marginTop="98px"
+                android:layout_marginTop="48px"
                 android:maxHeight="10dip" />
             <!-- 横杆 温度调节 完 -->
 
@@ -364,14 +380,6 @@
                 android:background="@drawable/downarrow"
                 android:gravity="center" />
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="fill_parent"
-        android:layout_height="351px"
-        android:layout_marginTop="0dp"
-        android:orientation="vertical" >
     </LinearLayout>
 
 </LinearLayout>
