@@ -21,6 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -84,7 +85,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		getWindow().requestFeature(Window.FEATURE_NO_TITLE); 
+		getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main_activity);
 		model_btn = (ImageButton) this.findViewById(R.id.model_btn);
 		homeButton = (ImageButton) this.findViewById(R.id.homebutton);
@@ -104,7 +105,42 @@ public class MainActivity extends Activity {
 		expertButton.setOnClickListener(new TopbuttonListener(3));
 
 		airBg = (LinearLayout) this.findViewById(R.id.air_bg);
-		// sb =(SeekBar)this.findViewById(R.id.item_list_temprature_seekbar);
+		sb = (SeekBar) this.findViewById(R.id.item_list_temprature_seekbar);
+
+		sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress,
+					boolean fromUser) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				int seekProgress = sb.getProgress();
+				if (seekProgress < 13) {
+					sb.setProgress(0);
+				} else if (seekProgress >= 13 && seekProgress < 38) {
+					sb.setProgress(25);
+				} else if (seekProgress >= 38 && seekProgress < 63) {
+					sb.setProgress(50);
+				} else if (seekProgress >= 63 && seekProgress < 88) {
+					sb.setProgress(75);
+				} else if (seekProgress >= 88) {
+					sb.setProgress(100);
+				}
+			}
+
+		});
 		/* http://blog.csdn.net/aidesudi/article/details/6608700 */
 		bindAllUI();
 		showFragment(busFragment);
@@ -133,7 +169,7 @@ public class MainActivity extends Activity {
 		// modeSpinner.setAdapter(modeSpinnerAdapter);
 		// modeSpinner.setOnItemSelectedListener(new
 		// ModeSpinnerSelectedListener());
-		
+
 		listHomeButton.setOnTouchListener(new AirButtonOnTouchListener(0));
 		acShowDownButton.setOnTouchListener(new AirButtonOnTouchListener(1));
 		acUpButton.setOnTouchListener(new AirButtonOnTouchListener(2));
@@ -142,6 +178,7 @@ public class MainActivity extends Activity {
 		powerUpButton.setOnTouchListener(new AirButtonOnTouchListener(5));
 		powerDownButton.setOnTouchListener(new AirButtonOnTouchListener(6));
 
+		acModelButton.setOnClickListener(new ACModelButtonListner());
 		acUpButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				String con = ac_text.getText().toString();
@@ -238,6 +275,18 @@ public class MainActivity extends Activity {
 
 			ba.setHandler(modelHandler);
 			Intent intent = new Intent(MainActivity.this, ModelActivity.class);
+
+			MainActivity.this.startActivity(intent);
+
+		}
+
+	}
+
+	class ACModelButtonListner implements OnClickListener {
+
+		public void onClick(View v) {
+
+			Intent intent = new Intent(MainActivity.this, ACModelActivity.class);
 
 			MainActivity.this.startActivity(intent);
 

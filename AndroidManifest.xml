@@ -29,6 +29,11 @@
             android:label="abc"
             android:theme="@style/Theme.Model" >
         </activity>
+         <activity
+            android:name="com.mark.bus.app.ACModelActivity"
+            android:label="abc"
+            android:theme="@style/Theme.Model" >
+        </activity>
         <activity
             android:name="com.mark.bus.app.ItemDetailActivity"
             android:label="@string/title_item_detail"

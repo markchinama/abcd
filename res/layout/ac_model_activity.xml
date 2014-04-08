@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ac_model_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@drawable/ac_model_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ac_model_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="制热"
+            android:textColor="#ffffff"
+            android:textSize="15px" />
+
+        <TextView
+            android:id="@+id/ac_model_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫风"
+            android:textColor="#ffffff"
+            android:textSize="15px" />
+
+        <TextView
+            android:id="@+id/ac_model_cold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="制冷"
+            android:textColor="#ffffff"
+            android:textSize="15px" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="105px"
+        android:layout_height="17px"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:maxHeight="30px"
+        android:minHeight="30px"
+        android:paddingLeft="20px"
+        android:progressDrawable="@drawable/seekbar_define_style"
+        android:thumb="@drawable/seekbar_thumb" />
+
+</LinearLayout>
