@@ -24,10 +24,10 @@ public class ACModelActivity extends Activity {
 		WindowManager.LayoutParams wl = window.getAttributes();
 		wl.flags = WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
 		wl.alpha = 0.9f;// 设置透明度,0.0为完全透明，1.0为完全不透明
-		wl.x = 20;
-		wl.y = 270;
-		wl.width =140;
-		wl.height=90;
+		wl.x = 80;
+		wl.y = 300;
+		wl.width =250;
+		wl.height=150;
 		window.setAttributes(wl);
 	}
 
