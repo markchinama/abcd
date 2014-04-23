@@ -33,13 +33,13 @@
     </LinearLayout>
   <SeekBar
         android:id="@+id/loop_seekBar"
-        android:layout_width="90px"
-        android:layout_height="17px"
+        android:layout_width="175px"
+        android:layout_height="40px"
         android:layout_centerInParent="true"
         android:max="100"
-        android:maxHeight="30px"
-        android:minHeight="30px"
-        android:layout_marginLeft="60px"
+        android:maxHeight="40px"
+        android:minHeight="40px"
+        android:layout_marginLeft="20px"
         android:progressDrawable="@drawable/loop_seekbar_define_style"
         android:thumb="@drawable/loop_seekbar_thumb" />
     <LinearLayout
@@ -79,13 +79,13 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="90px"
-        android:layout_height="17px"
+        android:layout_width="175px"
+        android:layout_height="40px"
         android:layout_centerInParent="true"
         android:max="100"
-        android:maxHeight="30px"
-        android:minHeight="30px"
-        android:layout_marginLeft="60px"
+        android:maxHeight="40px"
+        android:minHeight="40px"
+        android:layout_marginLeft="20px"
         android:progressDrawable="@drawable/seekbar_define_style"
         android:thumb="@drawable/seekbar_thumb" />
 
