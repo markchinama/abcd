@@ -28,7 +28,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 public class MainActivity extends Activity {
 
-	private static int currentTopButtonId = 0;
+	private static int currentTopButtonId = 4;
 	private ImageButton homeButton;
 	private ImageButton infoButton;
 	private ImageButton controlButton;
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 			R.drawable.power_down_click
 
 	};
-	private ImageButton[] topButtons = new ImageButton[4];
+	private ImageButton[] topButtons = new ImageButton[5];
 	private BusApplication ba = null;
 
 	private ModelHandler modelHandler = new ModelHandler();
@@ -89,21 +89,33 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main_activity);
 		model_btn = (ImageButton) this.findViewById(R.id.model_btn);
 		homeButton = (ImageButton) this.findViewById(R.id.homebutton);
+		homeButton.setOnLongClickListener(new View.OnLongClickListener() {
+
+			@Override
+			public boolean onLongClick(View v) {
+				// TODO Auto-generated method stub
+				System.out.println(123);
+				return false;
+			}
+		});
+
 		infoButton = (ImageButton) this.findViewById(R.id.infobutton);
 		controlButton = (ImageButton) this.findViewById(R.id.controlbutton);
 		cameralButton = (ImageButton) this.findViewById(R.id.cameralbutton);
 		expertButton = (ImageButton) this.findViewById(R.id.expertbutton);
+
 		topButtons[0] = infoButton;
 		topButtons[1] = controlButton;
 		topButtons[2] = cameralButton;
 		topButtons[3] = expertButton;
+		topButtons[4] = homeButton;
 		ba = (BusApplication) getApplication();
 		model_btn.setOnClickListener(new ModelButtonListner());
 		infoButton.setOnClickListener(new TopbuttonListener(0));
 		controlButton.setOnClickListener(new TopbuttonListener(1));
 		cameralButton.setOnClickListener(new TopbuttonListener(2));
 		expertButton.setOnClickListener(new TopbuttonListener(3));
-
+		homeButton.setOnClickListener(new TopbuttonListener(4));
 		airBg = (LinearLayout) this.findViewById(R.id.air_bg);
 		sb = (SeekBar) this.findViewById(R.id.item_list_temprature_seekbar);
 
@@ -112,7 +124,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				// TODO Auto-generated method stub
 
 			}
 
@@ -127,15 +138,17 @@ public class MainActivity extends Activity {
 			public void onStopTrackingTouch(SeekBar seekBar) {
 				// TODO Auto-generated method stub
 				int seekProgress = sb.getProgress();
-				if (seekProgress < 13) {
-					sb.setProgress(0);
-				} else if (seekProgress >= 13 && seekProgress < 38) {
-					sb.setProgress(25);
-				} else if (seekProgress >= 38 && seekProgress < 63) {
-					sb.setProgress(50);
-				} else if (seekProgress >= 63 && seekProgress < 88) {
-					sb.setProgress(75);
-				} else if (seekProgress >= 88) {
+				if (seekProgress < 10) {
+					sb.setProgress(3);
+				} else if (seekProgress >= 10 && seekProgress < 30) {
+					sb.setProgress(21);
+				} else if (seekProgress >= 30 && seekProgress < 50) {
+					sb.setProgress(42);
+				} else if (seekProgress >= 50 && seekProgress < 70) {
+					sb.setProgress(63);
+				} else if (seekProgress >= 70 && seekProgress < 90) {
+					sb.setProgress(80);
+				} else if (seekProgress >= 90) {
 					sb.setProgress(100);
 				}
 			}
@@ -260,13 +273,41 @@ public class MainActivity extends Activity {
 	}
 
 	public void showPress(int id) {
-		if (currentTopButtonId != id) {
+		System.out.println("id is " + id);
+		System.out.println("currentTopButtonId is " + currentTopButtonId);
+		
+		if (id != 4 ){
+			System.out.println("abc");
+			if (currentTopButtonId != 4 ){
+				topButtons[currentTopButtonId]
+						.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+			}
+			System.out.println("efg");
+			topButtons[id].setBackgroundResource(pressedBackGround[id]);
+		}else{
+			System.out.println("def");
+			if (currentTopButtonId != 4 )
 			topButtons[currentTopButtonId]
 					.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
-			topButtons[id].setBackgroundResource(pressedBackGround[id]);
-
-			currentTopButtonId = id;
 		}
+		
+		currentTopButtonId = id;
+		/*
+		if (id == 4 && currentTopButtonId != id) {
+			topButtons[currentTopButtonId]
+					.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+			currentTopButtonId = id;
+			return;
+		}
+		if (currentTopButtonId != id) {
+			if (currentTopButtonId != 4) {
+				topButtons[currentTopButtonId]
+						.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+				
+				topButtons[id].setBackgroundResource(pressedBackGround[id]);
+			}
+			currentTopButtonId = id;
+		}*/
 	}
 
 	class ModelButtonListner implements OnClickListener {
@@ -310,7 +351,7 @@ public class MainActivity extends Activity {
 				showFragment(buttonsFragment);
 				return;
 			}
-			if (v.equals(infoButton)) {
+			if (v.equals(homeButton)) {
 				v.setBackgroundResource(R.drawable.button_bus_info_pressed);
 				showFragment(busFragment);
 				return;

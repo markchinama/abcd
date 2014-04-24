@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
-<!-- 设置背景色图像资源 --> 
-<item android:id="@android:id/background" android:drawable="@drawable/processbarbg" /> 
-<!-- 设置第二级进度条颜色图像资源 --> 
-<!-- 设置第一级进度条颜色图像资源 --> 
-<item android:id="@android:id/progress" android:drawable="@drawable/processbarfg" /> 
-</layer-list>
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 未选中 -->
+	<item
+		android:id="@android:id/background"
+		android:drawable="@drawable/processbarbg"/>
+	<!-- 中 -->
+	<item
+		android:id="@android:id/progress"
+		android:drawable="@drawable/processbarfg"/>
+	<item
+		android:id="@android:id/secondaryProgress"
+		android:drawable="@drawable/processbarfg"/>
+</layer-list> 

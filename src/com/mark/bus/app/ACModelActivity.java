@@ -11,8 +11,12 @@ import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 
 public class ACModelActivity extends Activity {
+
+	private SeekBar loopSeekBar, modeSeekBar;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +27,67 @@ public class ACModelActivity extends Activity {
 		Window window = getWindow();
 		WindowManager.LayoutParams wl = window.getAttributes();
 		wl.flags = WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
-		wl.alpha = 0.9f;// 设置透明度,0.0为完全透明，1.0为完全不透明
+		wl.alpha = 1.0f;// 设置透明度,0.0为完全透明，1.0为完全不透明
 		wl.x = 80;
 		wl.y = 300;
-		wl.width =250;
-		wl.height=150;
+		wl.width = 250;
+		wl.height = 150;
 		window.setAttributes(wl);
+		loopSeekBar = (SeekBar) this.findViewById(R.id.loop_seekBar);
+		modeSeekBar = (SeekBar) this.findViewById(R.id.seekBar);
+		loopSeekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress,
+					boolean fromUser) {
+
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				int seekProgress = seekBar.getProgress();
+				if (seekProgress < 50)
+					seekBar.setProgress(8);
+				else
+					seekBar.setProgress(93);
+			}
+
+		});
+		modeSeekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress,
+					boolean fromUser) {
+
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				int seekProgress = seekBar.getProgress();
+				if (seekProgress <= 30)
+					seekBar.setProgress(8);
+				else if (seekProgress > 75)
+					seekBar.setProgress(93);
+				else
+					seekBar.setProgress(50);
+			}
+
+		});
 	}
 
 }

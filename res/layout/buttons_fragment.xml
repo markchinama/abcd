@@ -7,44 +7,46 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal" >
 
         <ImageButton
             android:id="@+id/button_front_fog"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/front_fog" />
 
         <ImageButton
             android:id="@+id/button_rear_fog"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/rear_fog" />
 
         <ImageButton
             android:id="@+id/button_hyperbaric_cabin"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/hyperbaric_cabin_on" />
+            android:background="@drawable/hyperbaric_cabin" />
 
         <ImageButton
             android:id="@+id/button_root_light"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/roof_light" />
 
         <ImageButton
             android:id="@+id/button_d_roof_light"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/d_roof_light" />
@@ -53,44 +55,46 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal" >
 
         <ImageButton
             android:id="@+id/button_tv_power"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/tv_power" />
 
         <ImageButton
             android:id="@+id/button_guide_board"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/guide_board" />
 
         <ImageButton
             android:id="@+id/button_left_turning"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/left_turning" />
 
         <ImageButton
             android:id="@+id/button_right_turning"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/right_turning" />
 
         <ImageButton
             android:id="@+id/none"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/none" />

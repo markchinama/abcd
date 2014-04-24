@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ac_model_bg"
     android:orientation="vertical" >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="20px"
@@ -18,8 +19,6 @@
             android:textColor="#ffffff"
             android:textSize="15px" />
 
-   
-
         <TextView
             android:id="@+id/loop_model_outer"
             android:layout_width="wrap_content"
@@ -31,20 +30,24 @@
             android:textColor="#ffffff"
             android:textSize="15px" />
     </LinearLayout>
-  <SeekBar
+
+    <SeekBar
         android:id="@+id/loop_seekBar"
         android:layout_width="175px"
         android:layout_height="40px"
         android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
         android:max="100"
         android:maxHeight="40px"
         android:minHeight="40px"
-        android:layout_marginLeft="20px"
+        android:progress="8"
         android:progressDrawable="@drawable/loop_seekbar_define_style"
         android:thumb="@drawable/loop_seekbar_thumb" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="20px"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal" >
 
         <TextView
@@ -82,11 +85,12 @@
         android:layout_width="175px"
         android:layout_height="40px"
         android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
         android:max="100"
         android:maxHeight="40px"
         android:minHeight="40px"
-        android:layout_marginLeft="20px"
+        android:progress="8"
         android:progressDrawable="@drawable/seekbar_define_style"
-        android:thumb="@drawable/seekbar_thumb" />
+        android:thumb="@drawable/seekbar_thumb"/>
 
 </LinearLayout>
