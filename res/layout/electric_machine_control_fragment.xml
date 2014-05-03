@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" >
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="直流侧电压"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/directvoltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="312"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机相电流"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machineelectric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机温度"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinetemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机控制器温度"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinecontroltemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机最大制动转矩"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinemaxbreaktorque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="312"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机最大制功率"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinemaxbreakpower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机最大电动转矩"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinemaxpowertorque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机最大驱动功率"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinemaxdrivepower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机转速"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinespeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="312"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电锯转矩"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/machinetorque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/separateline" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/darkbg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" >
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="READY信号"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/readysignal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="主接触器状态"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/maincontactorstatus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机运转方向"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mc_dianjiyunzhuanfangxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="能量流动方向"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mc_nengliangliudongfangxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电机控制器运行状态"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mc_dianjikongzhiqiyunxingzhuangtai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TableRow android:background="@drawable/brightbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="转速转矩模式"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mc_zhuansuzhuanjumoshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/darkbg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="空转"
+                    android:textColor="#5e3a14"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mc_kongzhuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1584"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

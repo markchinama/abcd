@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 	private ImageButton model_btn;
 	BusFragment busFragment = new BusFragment();
 	ButtonsFragment buttonsFragment = new ButtonsFragment();
-
+	BusInfoFragment busInfoFragment = new BusInfoFragment();
 	private ImageButton shutdownButton;
 	// private NumberPicker temperature;
 
@@ -56,11 +56,11 @@ public class MainActivity extends Activity {
 	private ImageButton listHomeButton;
 	private ImageButton acShowDownButton;
 	private ImageButton acModelButton;
-	private int[] pressedBackGround = { R.drawable.button_bus_info_pressed,
+	private int[] unpressedBackGround = { R.drawable.button_bus_info_pressed,
 			R.drawable.button_bus_control_pressed,
 			R.drawable.button_bus_cameral_pressed,
 			R.drawable.button_bus_expert_pressed };
-	private int[] unpressedBackGround = { R.drawable.button_bus_info,
+	private int[] pressedBackGround = { R.drawable.button_bus_info,
 			R.drawable.button_bus_control, R.drawable.button_bus_cameral,
 			R.drawable.button_bus_expert };
 
@@ -94,7 +94,10 @@ public class MainActivity extends Activity {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				System.out.println(123);
+				Intent it = new Intent((Activity) v.getContext(),
+						DataSettingActivity.class);
+				startActivity(it);
+
 				return false;
 			}
 		});
@@ -273,41 +276,33 @@ public class MainActivity extends Activity {
 	}
 
 	public void showPress(int id) {
-		System.out.println("id is " + id);
-		System.out.println("currentTopButtonId is " + currentTopButtonId);
-		
-		if (id != 4 ){
-			System.out.println("abc");
-			if (currentTopButtonId != 4 ){
-				topButtons[currentTopButtonId]
-						.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
-			}
-			System.out.println("efg");
-			topButtons[id].setBackgroundResource(pressedBackGround[id]);
-		}else{
-			System.out.println("def");
-			if (currentTopButtonId != 4 )
-			topButtons[currentTopButtonId]
-					.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
-		}
-		
-		currentTopButtonId = id;
-		/*
-		if (id == 4 && currentTopButtonId != id) {
-			topButtons[currentTopButtonId]
-					.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
-			currentTopButtonId = id;
-			return;
-		}
-		if (currentTopButtonId != id) {
+
+		if (id != 4) {
 			if (currentTopButtonId != 4) {
 				topButtons[currentTopButtonId]
 						.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
-				
-				topButtons[id].setBackgroundResource(pressedBackGround[id]);
 			}
-			currentTopButtonId = id;
-		}*/
+			topButtons[id].setBackgroundResource(pressedBackGround[id]);
+		} else {
+			System.out.println("def");
+			if (currentTopButtonId != 4) {
+				topButtons[currentTopButtonId]
+						.setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+			}
+		}
+
+		currentTopButtonId = id;
+		/*
+		 * if (id == 4 && currentTopButtonId != id) {
+		 * topButtons[currentTopButtonId]
+		 * .setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+		 * currentTopButtonId = id; return; } if (currentTopButtonId != id) { if
+		 * (currentTopButtonId != 4) { topButtons[currentTopButtonId]
+		 * .setBackgroundResource(unpressedBackGround[currentTopButtonId]);
+		 * 
+		 * topButtons[id].setBackgroundResource(pressedBackGround[id]); }
+		 * currentTopButtonId = id; }
+		 */
 	}
 
 	class ModelButtonListner implements OnClickListener {
@@ -352,8 +347,13 @@ public class MainActivity extends Activity {
 				return;
 			}
 			if (v.equals(homeButton)) {
-				v.setBackgroundResource(R.drawable.button_bus_info_pressed);
+				// v.setBackgroundResource(R.drawable.button_bus_info_pressed);
 				showFragment(busFragment);
+				return;
+			}
+			if (v.equals(infoButton)) {
+				// v.setBackgroundResource(R.drawable.button_bus_info_pressed);
+				showFragment(busInfoFragment);
 				return;
 			}
 		}

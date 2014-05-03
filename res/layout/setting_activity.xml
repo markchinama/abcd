@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/wlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/wlan_off" />
+
+        <ImageButton
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/data_off" />
+
+        <ImageButton
+            android:id="@+id/intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/intensity_off" />
+
+        <ImageButton
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/lock_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/wifi_off" />
+
+        <ImageButton
+            android:id="@+id/nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/nfc_off" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/video_off" />
+
+        <ImageButton
+            android:id="@+id/file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/file_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/intensitycontrol" />
+
+        <SeekBar
+            android:id="@+id/intensity_seekBar"
+            android:layout_width="770dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:max="100"
+            android:maxHeight="1px"
+            android:minHeight="1px"
+            android:progress="8"
+            android:progressDrawable="@drawable/intensity_control_define_style"
+            android:thumb="@drawable/intensity_control_thumb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/volumn" />
+
+        <SeekBar
+            android:id="@+id/volumn_seekBar"
+            android:layout_width="770dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:max="100"
+            android:maxHeight="1px"
+            android:minHeight="1px"
+            android:progress="8"
+            android:progressDrawable="@drawable/intensity_control_define_style"
+            android:thumb="@drawable/intensity_control_thumb" />
+    </LinearLayout>
+
+</LinearLayout>
