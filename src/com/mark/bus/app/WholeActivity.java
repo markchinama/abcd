@@ -5,16 +5,30 @@ import com.mark.bus.R;
 import android.app.Activity;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 public class WholeActivity extends Activity {
+
+	private ImageButton closeBtn;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.setContentView(R.layout.whole_activity);
+		closeBtn = (ImageButton) this.findViewById(R.id.closebtn);
+
+		closeBtn.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				finish();
+
+			}
+		});
 
 		Window window = getWindow();
 		WindowManager.LayoutParams wl = window.getAttributes();
@@ -23,7 +37,7 @@ public class WholeActivity extends Activity {
 
 		Point point = new Point();
 		getWindowManager().getDefaultDisplay().getSize(point);
-		
+
 		wl.x = 0;
 		wl.y = -5;
 		wl.width = point.x;
