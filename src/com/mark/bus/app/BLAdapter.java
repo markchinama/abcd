@@ -60,6 +60,11 @@ public class BLAdapter extends BaseAdapter {
 		holder.viewBtn.setText((CharSequence) mData.get(position));
 		blist.add(holder.viewBtn);
 		holder.viewBtn.setOnClickListener(new InfoOnClickListener(position));
+		if (position == 0) {
+			holder.viewBtn.setBackgroundResource(R.drawable.onebtnbg);
+			WholeControlFragment wholeControlFragment = new WholeControlFragment();
+			showFragment(wholeControlFragment);
+		}
 		return convertView;
 	}
 
@@ -76,6 +81,9 @@ public class BLAdapter extends BaseAdapter {
 			v.setBackgroundResource(R.drawable.onebtnbg);
 			Button previous = (Button) blist.get(current);
 			previous.setBackgroundResource(R.drawable.onebtnunpress);
+
+			if (position == current)
+				return;
 			current = position;
 
 			if (position == 0) {
@@ -106,7 +114,7 @@ public class BLAdapter extends BaseAdapter {
 				BusCanFragment busCanFragment = new BusCanFragment();
 				showFragment(busCanFragment);
 			}
-			
+
 		}
 	}
 

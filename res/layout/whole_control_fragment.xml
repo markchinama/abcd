@@ -33,12 +33,12 @@
                 android:orientation="horizontal" >
 
                 <TextView
-                    android:id="@+id/busspeed"
+                    android:id="@+id/wc_cheshu1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="40.0"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="35dp" />
 
@@ -48,7 +48,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
                     android:gravity="center"
-                    android:text="km/h"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -71,12 +71,12 @@
                 android:textSize="30dp" />
 
             <TextView
-                android:id="@+id/busshift"
+                android:id="@+id/wc_dangwei1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="D"
+                android:text=""
                 android:textColor="#000000"
                 android:textSize="35dp" />
         </LinearLayout>
@@ -98,12 +98,12 @@
                 android:textSize="30dp" />
 
             <TextView
-                android:id="@+id/accelerator"
+                android:id="@+id/wc_shache1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="30%"
+                android:text=""
                 android:textColor="#000000"
                 android:textSize="35dp" />
         </LinearLayout>
@@ -116,7 +116,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/busbreak"
+                android:id="@+id/wc_youmen1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="80%"
+                android:text=""
                 android:textColor="#000000"
                 android:textSize="35dp" />
         </LinearLayout>
@@ -149,7 +149,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/electricbreak"
+                android:id="@+id/wc_dianzhidong1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -166,7 +166,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/apudischaring"
+                android:id="@+id/wc_apufangdianshineng1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -183,7 +183,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/keyacc"
+                android:id="@+id/wc_yaoshiacc1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -200,7 +200,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/acstart"
+                android:id="@+id/wc_kongtiaoqidong1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -220,7 +220,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/electricbreakpriority"
+                android:id="@+id/wc_dianjizhidongyouxianxinhao1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -232,12 +232,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="电制制动优先信号"
+                android:text="电机制动优先信号"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/apustart"
+                android:id="@+id/wc_apugongzuoshineng1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -254,7 +254,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/keyon"
+                android:id="@+id/wc_yaoshion1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -271,7 +271,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/acstartstatus"
+                android:id="@+id/wc_kongtiaogongzuoshineng1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -283,7 +283,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="空调功能使能"
+                android:text="空调工作使能"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -291,7 +291,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/stopsignal"
+                android:id="@+id/wc_zhuchexinhao1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -308,7 +308,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/maincontactorstatus"
+                android:id="@+id/wc_zhujiechuqizhuangtai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -325,7 +325,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/keyst"
+                android:id="@+id/wc_yaoshist1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -342,7 +342,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/acpower"
+                android:id="@+id/wc_kongtiaogonglvshuaijianshineng1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -362,7 +362,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/breaksignal"
+                android:id="@+id/wc_zhidongxinhao1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -379,7 +379,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/highpresshandbreaksignal"
+                android:id="@+id/wc_gaoyashouzhaxinhao1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -396,7 +396,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/readystatus"
+                android:id="@+id/wc_ready1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -413,7 +413,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/waterpumpstart"
+                android:id="@+id/wc_shuibengqidong1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -433,7 +433,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/idlingstart"
+                android:id="@+id/wc_yisukaiguan1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

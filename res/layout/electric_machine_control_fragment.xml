@@ -24,11 +24,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/directvoltage"
+                    android:id="@+id/mc_zhiliucedianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="312"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -44,11 +44,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machineelectric"
+                    android:id="@+id/mc_dianjixiangdianliu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -64,11 +64,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinetemperature"
+                    android:id="@+id/mc_dianjiwendu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -84,11 +84,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinecontroltemperature"
+                    android:id="@+id/cm_dianjikongzhiqiwendu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -110,11 +110,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinemaxbreaktorque"
+                    android:id="@+id/mc_dianjizuidazhidongzhuanju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="312"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -125,16 +125,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机最大制功率"
+                    android:text="电机最大制动功率"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinemaxbreakpower"
+                    android:id="@+id/mc_dianjizuidazhidonggonglv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -150,11 +150,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinemaxpowertorque"
+                    android:id="@+id/mc_dianjizuidadiandongzhuanju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -170,11 +170,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinemaxdrivepower"
+                    android:id="@+id/mc_dianjizuidaqudonggonglv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -196,11 +196,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinespeed"
+                    android:id="@+id/mc_dianjizhuansu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="312"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -211,16 +211,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电锯转矩"
+                    android:text="电机转矩"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/machinetorque"
+                    android:id="@+id/mc_dianjizhuanju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -258,11 +258,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/readysignal"
+                    android:id="@+id/mc_readyxinhao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -278,11 +278,11 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/maincontactorstatus1"
+                    android:id="@+id/mc_zhujiechuqizhuangtai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -302,7 +302,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -328,7 +328,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -348,7 +348,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -374,7 +374,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -394,7 +394,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="1584"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
