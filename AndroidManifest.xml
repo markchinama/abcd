@@ -44,9 +44,15 @@
         </activity>
          <activity
             android:name="com.mark.bus.app.BatteryManagementActivity"
-            android:label="abc"
+            android:label="abcdes"
             android:theme="@style/Theme.Model" >
         </activity>
+         <activity
+            android:name="com.mark.bus.app.BusCanActivity"
+            android:label="abcdes"
+            android:theme="@style/Theme.Model" >
+        </activity>
+         
     </application>
 
 </manifest>

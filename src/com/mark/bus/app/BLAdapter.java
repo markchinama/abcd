@@ -78,13 +78,13 @@ public class BLAdapter extends BaseAdapter {
 
 		@Override
 		public void onClick(View v) {
-			v.setBackgroundResource(R.drawable.onebtnbg);
 			Button previous = (Button) blist.get(current);
 			previous.setBackgroundResource(R.drawable.onebtnunpress);
 
 			if (position == current)
 				return;
 			current = position;
+			v.setBackgroundResource(R.drawable.onebtnbg);
 
 			if (position == 0) {
 				WholeControlFragment wholeControlFragment = new WholeControlFragment();

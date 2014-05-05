@@ -462,7 +462,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <LinearLayout
@@ -473,13 +473,14 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/battery01bg"
+                android:background="@drawable/batterypopup_1"
                 android:orientation="horizontal" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
                     android:text="模块1"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
@@ -529,7 +530,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="21支"
+                    android:text=""
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -553,7 +554,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -570,7 +571,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -587,7 +588,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -604,7 +605,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -624,7 +625,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -641,7 +642,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -658,7 +659,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -675,7 +676,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -695,7 +696,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -712,7 +713,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -729,7 +730,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -746,7 +747,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -766,7 +767,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -783,7 +784,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -800,7 +801,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -817,7 +818,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -837,7 +838,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -854,7 +855,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -871,7 +872,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -888,7 +889,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -908,7 +909,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -925,7 +926,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -942,7 +943,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -959,7 +960,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -979,7 +980,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -996,7 +997,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1013,7 +1014,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1030,7 +1031,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1050,7 +1051,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1067,7 +1068,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1084,7 +1085,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1101,7 +1102,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1117,13 +1118,14 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/battery02bg"
+                android:background="@drawable/batterypopup_2"
                 android:orientation="horizontal" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
                     android:text="模块2"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
@@ -1173,7 +1175,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="21支"
+                    android:text=""
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -1197,7 +1199,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1214,7 +1216,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1231,7 +1233,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1248,7 +1250,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1268,7 +1270,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1285,7 +1287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1302,7 +1304,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1319,7 +1321,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1339,7 +1341,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1356,7 +1358,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1373,7 +1375,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1390,7 +1392,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1410,7 +1412,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1427,7 +1429,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1444,7 +1446,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1461,7 +1463,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1481,7 +1483,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1498,7 +1500,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1515,7 +1517,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1532,7 +1534,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1552,7 +1554,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1569,7 +1571,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1586,7 +1588,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1603,7 +1605,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1623,7 +1625,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1640,7 +1642,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1657,7 +1659,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1674,7 +1676,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
@@ -1694,7 +1696,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1711,7 +1713,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1728,7 +1730,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
 
@@ -1745,7 +1747,2597 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="20V"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="470dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/batterypopup_3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
+                    android:text="模块3"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/highicon" />
+
+                <TextView
+                    android:id="@+id/bm_m3_high_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/lowicon" />
+
+                <TextView
+                    android:id="@+id/bm_m3_low_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/batteryicon" />
+
+                <TextView
+                    android:id="@+id/bm_m3_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="1)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="9)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="17)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="25)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="2)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="10)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="18)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="26)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="3)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="11)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="19)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="27)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="4)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="12)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="20)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="28)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="5)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="13)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="21)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="29)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="6)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="14)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="22)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="30)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="7)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="15)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="23)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="31)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="8)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="16)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="24)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="32)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m3b32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="480dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/batterypopup_4"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
+                    android:text="模块4"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/highicon" />
+
+                <TextView
+                    android:id="@+id/bm_m4_high_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/lowicon" />
+
+                <TextView
+                    android:id="@+id/bm_m4_low_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/batteryicon" />
+
+                <TextView
+                    android:id="@+id/bm_m4_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="1)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="9)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="17)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="25)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="2)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="10)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="18)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="26)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="3)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="11)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="19)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="27)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="4)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="12)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="20)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="28)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="5)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="13)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="21)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="29)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="6)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="14)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="22)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="30)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="7)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="15)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="23)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="31)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="8)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="16)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="24)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="32)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m4b32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="470dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/batterypopup_5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
+                    android:text="模块5"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/highicon" />
+
+                <TextView
+                    android:id="@+id/bm_m5_high_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/lowicon" />
+
+                <TextView
+                    android:id="@+id/bm_m5_low_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/batteryicon" />
+
+                <TextView
+                    android:id="@+id/bm_m5_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="1)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="9)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="17)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="25)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="2)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="10)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="18)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="26)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="3)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="11)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="19)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="27)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="4)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="12)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="20)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="28)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="5)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="13)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="21)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="29)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="6)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="14)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="22)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="30)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="7)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="15)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="23)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="31)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="8)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="16)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="24)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="32)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m5b32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="480dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/batterypopup_6"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
+                    android:text="模块6"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/highicon" />
+
+                <TextView
+                    android:id="@+id/bm_m6_high_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/lowicon" />
+
+                <TextView
+                    android:id="@+id/bm_m6_low_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="   "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/batteryicon" />
+
+                <TextView
+                    android:id="@+id/bm_m6_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="1)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="9)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="17)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="25)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="2)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="10)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="18)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="26)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="3)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="11)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="19)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="27)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="4)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="12)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="20)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="28)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="5)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="13)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="21)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="29)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="6)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="14)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="22)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="30)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="7)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="15)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="23)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="31)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="8)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="16)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="24)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="32)"
+                        android:textColor="#5e3a14"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/m6b32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
                         android:textColor="#000000"
                         android:textSize="15dp" />
                 </TableRow>
