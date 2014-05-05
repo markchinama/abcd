@@ -1,10 +1,13 @@
 package com.mark.bus.app;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnTouchListener;
 import android.widget.ImageButton;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -29,11 +32,16 @@ public class BatteryManagementFragment extends Fragment {
 
 	private ImageButton collapse;
 
+	private final int DOUBLE_TAP_TIMEOUT = 200;
+	private MotionEvent mCurrentDownEvent;
+	private MotionEvent mPreviousUpEvent;
+	private View view;
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View view = inflater.inflate(R.layout.battery_management_fragment,
+		view = inflater.inflate(R.layout.battery_management_fragment,
 				container, false);
 
 		collapse = (ImageButton) view.findViewById(R.id.collapse);
@@ -65,7 +73,7 @@ public class BatteryManagementFragment extends Fragment {
 					tab31.setVisibility(View.GONE);
 					tab32.setVisibility(View.GONE);
 					v.setBackgroundResource(R.drawable.batterytopbtnopen);
-					flag =true;
+					flag = true;
 				} else {
 					tab11.setVisibility(View.VISIBLE);
 					tab12.setVisibility(View.VISIBLE);
@@ -78,11 +86,47 @@ public class BatteryManagementFragment extends Fragment {
 					tab31.setVisibility(View.VISIBLE);
 					tab32.setVisibility(View.VISIBLE);
 					v.setBackgroundResource(R.drawable.batterytopbtnclose);
-					flag =false;
+					flag = false;
 				}
-				
+
 			}
 		});
+
+		OnTouchListener mTouchListener = new OnTouchListener() {
+
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if (event.getAction() == MotionEvent.ACTION_DOWN) {
+					if (mPreviousUpEvent != null
+							&& mCurrentDownEvent != null
+							&& isConsideredDoubleTap(mCurrentDownEvent,
+									mPreviousUpEvent, event)) {
+
+						Intent intent = new Intent(view.getContext(),
+								BatteryManagementActivity.class);
+
+						view.getContext().startActivity(intent);
+
+					}
+					mCurrentDownEvent = MotionEvent.obtain(event);
+				} else if (event.getAction() == MotionEvent.ACTION_UP) {
+					mPreviousUpEvent = MotionEvent.obtain(event);
+				}
+				return true;
+			}
+
+			private boolean isConsideredDoubleTap(MotionEvent firstDown,
+					MotionEvent firstUp, MotionEvent secondDown) {
+				if (secondDown.getEventTime() - firstUp.getEventTime() > DOUBLE_TAP_TIMEOUT) {
+					return false;
+				}
+				int deltaX = (int) firstUp.getX() - (int) secondDown.getX();
+				int deltaY = (int) firstUp.getY() - (int) secondDown.getY();
+				return deltaX * deltaX + deltaY * deltaY < 10000;
+			}
+		};
+
+		view.setOnTouchListener(mTouchListener);
 
 		return view;
 	}

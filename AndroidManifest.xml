@@ -42,6 +42,11 @@
             android:label="abc"
             android:theme="@style/Theme.Model" >
         </activity>
+         <activity
+            android:name="com.mark.bus.app.BatteryManagementActivity"
+            android:label="abc"
+            android:theme="@style/Theme.Model" >
+        </activity>
     </application>
 
 </manifest>
