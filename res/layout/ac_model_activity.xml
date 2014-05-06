@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20px"
-            android:text="内循环"
+            android:text="@string/neixunhuan"
             android:textColor="#ffffff"
             android:textSize="15px" />
 
@@ -26,7 +26,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="80px"
             android:gravity="center"
-            android:text="外循环"
+            android:text="@string/waixunhuan"
             android:textColor="#ffffff"
             android:textSize="15px" />
     </LinearLayout>
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20px"
-            android:text="制热"
+            android:text="@string/zhire"
             android:textColor="#ffffff"
             android:textSize="15px" />
 
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40px"
-            android:text="扫风"
+            android:text="@string/saofeng"
             android:textColor="#ffffff"
             android:textSize="15px" />
 
@@ -75,7 +75,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="40px"
             android:gravity="center"
-            android:text="制冷"
+            android:text="@string/zhileng"
             android:textColor="#ffffff"
             android:textSize="15px" />
     </LinearLayout>
