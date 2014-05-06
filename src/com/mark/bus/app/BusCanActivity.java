@@ -19,7 +19,7 @@ public class BusCanActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.setContentView(R.layout.bus_can_activity);
-		closeBtn = (ImageButton) this.findViewById(R.id.bc_closebtn);
+		closeBtn = (ImageButton) this.findViewById(R.id.bca_closebtn);
 
 		closeBtn.setOnClickListener(new View.OnClickListener() {
 

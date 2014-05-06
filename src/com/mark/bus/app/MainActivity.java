@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.mark.bus.R;
+
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -87,6 +89,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main_activity);
+
 		model_btn = (ImageButton) this.findViewById(R.id.model_btn);
 		homeButton = (ImageButton) this.findViewById(R.id.homebutton);
 		homeButton.setOnLongClickListener(new View.OnLongClickListener() {
@@ -113,6 +116,7 @@ public class MainActivity extends Activity {
 		topButtons[3] = expertButton;
 		topButtons[4] = homeButton;
 		ba = (BusApplication) getApplication();
+		ba.setCrashHandler(new CrashHandler());
 		model_btn.setOnClickListener(new ModelButtonListner());
 		infoButton.setOnClickListener(new TopbuttonListener(0));
 		controlButton.setOnClickListener(new TopbuttonListener(1));
@@ -360,29 +364,29 @@ public class MainActivity extends Activity {
 
 	}
 
-	/*
-	 * private class ModeSpinnerSelectedListener implements
-	 * OnItemSelectedListener {
-	 * 
-	 * @Override public void onItemSelected(AdapterView<?> adapterView, View
-	 * view, int position, long arg3) { /* Toast.makeText(ItemListActivity.this,
-	 * "妯″紡鍒囨崲鑷� + modeSpinnerAdapter.getItem(position),
-	 * Toast.LENGTH_SHORT).show(); TextView tv = (TextView) view;
-	 * tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL);
-	 * 
-	 * }
-	 * 
-	 * @Override public void onNothingSelected(AdapterView<?> parent) { // TODO
-	 * Auto-generated method stub
-	 * 
-	 * } }
-	 */
-
 	final class ModelHandler extends Handler {
 		@Override
 		public void handleMessage(Message msg) {
 
 			model_btn.setBackgroundResource(bgSource[msg.what]);
+		}
+	}
+
+	final class CrashHandler extends Handler {
+		@Override
+		public void handleMessage(Message msg) {
+
+			CrashCheckFragment crashCheckFragment = new CrashCheckFragment(
+					ba.getCrashStatus());
+
+			FragmentTransaction transaction = MainActivity.this
+					.getFragmentManager().beginTransaction();
+
+			transaction.replace(R.id.info_fragment_container,
+					crashCheckFragment);
+			// commit after activity saveInstatance ,pls use
+			// commitAllowingStateLoss
+			transaction.commitAllowingStateLoss();
 		}
 	}
 }

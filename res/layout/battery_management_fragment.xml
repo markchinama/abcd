@@ -49,7 +49,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchizongdianya"
+                    android:id="@+id/bmf_dianchizongdianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -69,7 +69,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchisoc"
+                    android:id="@+id/bmf_dianchisoc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -89,7 +89,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchizongxiangshu"
+                    android:id="@+id/bmf_dianchizongxiangshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -112,7 +112,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuigaoweidudianchixiangweizhi"
+                    android:id="@+id/bmf_zuigaoweidudianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -135,7 +135,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuidiweidudianchixiangweizhi"
+                    android:id="@+id/bmf_zuidiweidudianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -158,7 +158,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dantizuigaodianya"
+                    android:id="@+id/bmf_dantizuigaodianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -181,7 +181,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchizuididianya"
+                    android:id="@+id/bmf_dianchizuididianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -207,7 +207,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_shengyunengliang"
+                    android:id="@+id/bmf_shengyunengliang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -227,7 +227,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_shunshigonglv"
+                    android:id="@+id/bmf_shunshigonglv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -247,7 +247,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_shunshigonghao"
+                    android:id="@+id/bmf_shunshigonghao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -270,7 +270,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuigaodianyadianchixiangweizhi"
+                    android:id="@+id/bmf_zuigaodianyadianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -293,7 +293,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuididianyadianchiweizhi"
+                    android:id="@+id/bmf_zuididianyadianchiweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -316,7 +316,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuigaodianyadianchixiangjieshu"
+                    android:id="@+id/bmf_zuigaodianyadianchixiangjieshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -339,7 +339,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuididianyadianchixiangjieshu"
+                    android:id="@+id/bmf_zuididianyadianchixiangjieshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -366,7 +366,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchichongfangdiandianliu"
+                    android:id="@+id/bmf_dianchichongfangdiandianliu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -386,7 +386,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_mokuaizuigaowendu"
+                    android:id="@+id/bmf_mokuaizuigaowendu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -406,7 +406,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_mokuaizuidiwendu"
+                    android:id="@+id/bmf_mokuaizuidiwendu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -429,7 +429,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_chongdianzhuanglianjiebiaozhiwei"
+                    android:id="@+id/bmf_chongdianzhuanglianjiebiaozhiwei"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -452,7 +452,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_jinzhichongdianbiaozhi"
+                    android:id="@+id/bmf_jinzhichongdianbiaozhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"

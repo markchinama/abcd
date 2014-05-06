@@ -42,17 +42,21 @@
             android:label="abc"
             android:theme="@style/Theme.Model" >
         </activity>
-         <activity
+        <activity
             android:name="com.mark.bus.app.BatteryManagementActivity"
-            android:label="abcdes"
+            android:label="abcd"
             android:theme="@style/Theme.Model" >
         </activity>
-         <activity
+        <activity
             android:name="com.mark.bus.app.BusCanActivity"
-            android:label="abcdes"
+            android:label="abc"
             android:theme="@style/Theme.Model" >
         </activity>
-         
+        <activity
+            android:name="com.mark.bus.app.CrashActivity"
+            android:label="abc"
+            android:theme="@style/Theme.Model" >
+        </activity>
     </application>
 
 </manifest>

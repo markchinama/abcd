@@ -21,7 +21,7 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/bm_closebtn"
+            android:id="@+id/bma_closebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="700dp"
@@ -49,7 +49,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchizongdianya"
+                    android:id="@+id/bma_dianchizongdianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -69,7 +69,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchisoc"
+                    android:id="@+id/bma_dianchisoc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -89,7 +89,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchizongxiangshu"
+                    android:id="@+id/bma_dianchizongxiangshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -111,7 +111,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuigaoweidudianchixiangweizhi"
+                    android:id="@+id/bma_zuigaoweidudianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -134,7 +134,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuidiwe年dudianchixiangweizhi"
+                    android:id="@+id/bma_zuidiwe年dudianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -156,7 +156,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dantizuigaodianya"
+                    android:id="@+id/bma_dantizuigaodianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -178,7 +178,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchizuididianya"
+                    android:id="@+id/bma_dianchizuididianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -204,7 +204,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_shengyunengliang"
+                    android:id="@+id/bma_shengyunengliang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -224,7 +224,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_shunshigonglv"
+                    android:id="@+id/bma_shunshigonglv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -244,7 +244,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_shunshigonghao"
+                    android:id="@+id/bma_shunshigonghao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -266,7 +266,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuigaodianyadianchixiangweizhi"
+                    android:id="@+id/bma_zuigaodianyadianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -288,7 +288,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuididianyadianchiweizhi"
+                    android:id="@+id/bma_zuididianyadianchiweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -310,7 +310,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuigaodianyadianchixiangjieshu"
+                    android:id="@+id/bma_zuigaodianyadianchixiangjieshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -332,7 +332,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_zuididianyadianchixiangjieshu"
+                    android:id="@+id/bma_zuididianyadianchixiangjieshu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -359,7 +359,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_dianchichongfangdiandianliu"
+                    android:id="@+id/bma_dianchichongfangdiandianliu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -379,7 +379,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_mokuaizuigaowendu"
+                    android:id="@+id/bma_mokuaizuigaowendu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -399,7 +399,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_mokuaizuidiwendu"
+                    android:id="@+id/bma_mokuaizuidiwendu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -421,7 +421,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_chongdianzhuanglianjiebiaozhiwei"
+                    android:id="@+id/bma_chongdianzhuanglianjiebiaozhiwei"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -443,7 +443,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bm_jinzhichongdianbiaozhi"
+                    android:id="@+id/bma_jinzhichongdianbiaozhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -494,7 +494,7 @@
                     android:background="@drawable/highicon" />
 
                 <TextView
-                    android:id="@+id/bm_m1_high_temperature"
+                    android:id="@+id/bma_m1_high_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -510,7 +510,7 @@
                     android:background="@drawable/lowicon" />
 
                 <TextView
-                    android:id="@+id/bm_m1_low_temperature"
+                    android:id="@+id/bma_m1_low_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -526,7 +526,7 @@
                     android:background="@drawable/batteryicon" />
 
                 <TextView
-                    android:id="@+id/bm_m1_count"
+                    android:id="@+id/bma_m1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1139,7 +1139,7 @@
                     android:background="@drawable/highicon" />
 
                 <TextView
-                    android:id="@+id/bm_m2_high_temperature"
+                    android:id="@+id/bma_m2_high_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1155,7 +1155,7 @@
                     android:background="@drawable/lowicon" />
 
                 <TextView
-                    android:id="@+id/bm_m2_low_temperature"
+                    android:id="@+id/bma_m2_low_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1171,7 +1171,7 @@
                     android:background="@drawable/batteryicon" />
 
                 <TextView
-                    android:id="@+id/bm_m2_count"
+                    android:id="@+id/bma_m2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1789,7 +1789,7 @@
                     android:background="@drawable/highicon" />
 
                 <TextView
-                    android:id="@+id/bm_m3_high_temperature"
+                    android:id="@+id/bma_m3_high_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1805,7 +1805,7 @@
                     android:background="@drawable/lowicon" />
 
                 <TextView
-                    android:id="@+id/bm_m3_low_temperature"
+                    android:id="@+id/bma_m3_low_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1821,7 +1821,7 @@
                     android:background="@drawable/batteryicon" />
 
                 <TextView
-                    android:id="@+id/bm_m3_count"
+                    android:id="@+id/bma_m3_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -2434,7 +2434,7 @@
                     android:background="@drawable/highicon" />
 
                 <TextView
-                    android:id="@+id/bm_m4_high_temperature"
+                    android:id="@+id/bma_m4_high_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -2450,7 +2450,7 @@
                     android:background="@drawable/lowicon" />
 
                 <TextView
-                    android:id="@+id/bm_m4_low_temperature"
+                    android:id="@+id/bma_m4_low_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -2466,7 +2466,7 @@
                     android:background="@drawable/batteryicon" />
 
                 <TextView
-                    android:id="@+id/bm_m4_count"
+                    android:id="@+id/bma_m4_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -3084,7 +3084,7 @@
                     android:background="@drawable/highicon" />
 
                 <TextView
-                    android:id="@+id/bm_m5_high_temperature"
+                    android:id="@+id/bma_m5_high_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -3100,7 +3100,7 @@
                     android:background="@drawable/lowicon" />
 
                 <TextView
-                    android:id="@+id/bm_m5_low_temperature"
+                    android:id="@+id/bma_m5_low_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -3116,7 +3116,7 @@
                     android:background="@drawable/batteryicon" />
 
                 <TextView
-                    android:id="@+id/bm_m5_count"
+                    android:id="@+id/bma_m5_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -3729,7 +3729,7 @@
                     android:background="@drawable/highicon" />
 
                 <TextView
-                    android:id="@+id/bm_m6_high_temperature"
+                    android:id="@+id/bma_m6_high_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -3745,7 +3745,7 @@
                     android:background="@drawable/lowicon" />
 
                 <TextView
-                    android:id="@+id/bm_m6_low_temperature"
+                    android:id="@+id/bma_m6_low_temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -3761,7 +3761,7 @@
                     android:background="@drawable/batteryicon" />
 
                 <TextView
-                    android:id="@+id/bm_m6_count"
+                    android:id="@+id/bma_m6_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"

@@ -12,12 +12,11 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianmentabudeng"
+                android:id="@+id/bcf_qianmentabudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -29,29 +28,11 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zuoqianzhuanxiang"
+                android:id="@+id/bcf_zuoxinglicangzhaomingdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="左前转向"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/bc_zuoxinglicangzhaomingdeng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,17 +42,32 @@
                 android:text="左行李舱照明灯"
                 android:textColor="#000000"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bcf_houwudeng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/offstatus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="后雾灯"
+                android:textColor="#000000"
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_yuanguangdeng"
+                android:id="@+id/bcf_yuanguangdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -83,29 +79,11 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_youqianzhuanxiang"
+                android:id="@+id/bcf_youxinglicangzhaomingdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="右前转向"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/bc_youxinglicangzhaomingdeng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -115,17 +93,32 @@
                 android:text="右行李舱照明灯"
                 android:textColor="#000000"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bcf_zhidongdeng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/offstatus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="制动灯"
+                android:textColor="#000000"
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianwudeng"
+                android:id="@+id/bcf_qianwudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -137,29 +130,11 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_yuguaqikuaidang"
+                android:id="@+id/bcf_zhongmentabudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="雨刮器快档"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/bc_zhongmentabudeng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -169,17 +144,32 @@
                 android:text="中门踏步灯"
                 android:textColor="#000000"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bcf_daochedeng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/offstatus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="倒车灯"
+                android:textColor="#000000"
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_jinguangdeng"
+                android:id="@+id/bcf_jinguangdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -191,29 +181,11 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_kongtiaodianyuankaiguan"
+                android:id="@+id/bcf_weishengjianyourenzhishideng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="空调电源开关"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/bc_weishengjianyourenzhishideng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -223,17 +195,32 @@
                 android:text="卫生间有人指示灯"
                 android:textColor="#000000"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bcf_gaoyacangdeng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/offstatus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="高压舱灯"
+                android:textColor="#000000"
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianmenkaidiancifa"
+                android:id="@+id/bcf_qianmenkaidiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -245,29 +232,11 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_ganzaoqi"
+                android:id="@+id/bcf_dianshijidianyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="干燥器"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/bc_dianshijidianyuan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -277,17 +246,32 @@
                 android:text="电视机电源"
                 android:textColor="#000000"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bcf_qidongjidianqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/offstatus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="启动继电器"
+                android:textColor="#000000"
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianmenguandiancifa"
+                android:id="@+id/bcf_qianmenguandiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -299,36 +283,34 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_shigaodeng"
+                android:id="@+id/bcf_zhongmenguanmendiacifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="示高灯"
+                android:text="中门关电磁阀"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhongmenguanmendiancifa"
+                android:id="@+id/bcf_weishengjianqiangzhipaiwufa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="中门关门电磁阀"
+                android:text="卫生间强制排污阀"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -336,12 +318,11 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_penshuidianji"
+                android:id="@+id/bcf_penshuidianji"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -353,51 +334,46 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_yuguaqimandang"
+                android:id="@+id/bcf_zhongmenkaimendiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="雨刮器慢档"
+                android:text="中文开门电磁阀"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhongmenkaimendiancifa"
+                android:id="@+id/bcf_nuanshuidiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="中门开门电磁阀"
+                android:text="暖水电磁阀"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
-        
-        
-        
+
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qilaba"
+                android:id="@+id/bcf_qilaba"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -409,29 +385,11 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_jiansuqidianyuan"
+                android:id="@+id/bcf_lupaideng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="减速器电源"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/bc_lupaideng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:background="@drawable/offstatus" >
-            </ImageView>
+                android:background="@drawable/offstatus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -439,6 +397,22 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:text="路牌灯"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bcf_lupaidianyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/offstatus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="路牌电源"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>

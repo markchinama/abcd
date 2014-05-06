@@ -9,6 +9,7 @@ import com.mark.bus.R;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,15 +21,19 @@ public class BLAdapter extends BaseAdapter {
 
 	private List blist = new ArrayList();
 	private int current = 0;
-
+	private BusApplication ba = null;
 	private List<Map<String, Object>> mData;
 	private LayoutInflater mInflater;
 	private Fragment fra;
+	private View view;
 
 	public BLAdapter(Fragment fra, View view, List mData) {
+		this.view = view;
 		this.mInflater = LayoutInflater.from(view.getContext());
 		this.mData = mData;
 		this.fra = fra;
+		ba = (BusApplication) fra.getActivity().getApplication();
+
 	}
 
 	@Override
@@ -78,11 +83,12 @@ public class BLAdapter extends BaseAdapter {
 
 		@Override
 		public void onClick(View v) {
-			Button previous = (Button) blist.get(current);
-			previous.setBackgroundResource(R.drawable.onebtnunpress);
 
 			if (position == current)
 				return;
+			Button previous = (Button) blist.get(current);
+			previous.setBackgroundResource(R.drawable.onebtnunpress);
+
 			current = position;
 			v.setBackgroundResource(R.drawable.onebtnbg);
 
@@ -113,6 +119,21 @@ public class BLAdapter extends BaseAdapter {
 			if (position == 6) {
 				BusCanFragment busCanFragment = new BusCanFragment();
 				showFragment(busCanFragment);
+			}
+			if (position == 7) {
+				if (!(ba == null)) {
+					if (ba.getCrashStatus() == 3) {
+
+						Intent intent = new Intent(view.getContext(),
+								CrashActivity.class);
+
+						view.getContext().startActivity(intent);
+					} else {
+						CrashCheckFragment crashCheckFragment = new CrashCheckFragment(
+								ba.getCrashStatus());
+						showFragment(crashCheckFragment);
+					}
+				}
 			}
 
 		}

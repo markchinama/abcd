@@ -21,7 +21,7 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/bc_closebtn"
+            android:id="@+id/bca_closebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="700dp"
@@ -31,12 +31,12 @@
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp" >
+        android:layout_marginTop="50dp" >
 
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianmentabudeng"
+                android:id="@+id/bca_qianmentabudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -52,7 +52,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zuoxinglicangzhaomingdeng"
+                android:id="@+id/bca_zuoxinglicangzhaomingdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -68,7 +68,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_houwudeng"
+                android:id="@+id/bca_houwudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -87,7 +87,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_yuanguangdeng"
+                android:id="@+id/bca_yuanguangdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -103,7 +103,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_youxinglicangzhaomingdeng"
+                android:id="@+id/bca_youxinglicangzhaomingdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -119,7 +119,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhidongdeng"
+                android:id="@+id/bca_zhidongdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -138,7 +138,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianwudeng"
+                android:id="@+id/bca_qianwudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -154,7 +154,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhongmentabudeng"
+                android:id="@+id/bca_zhongmentabudeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -170,7 +170,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_daochedeng"
+                android:id="@+id/bca_daochedeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -189,7 +189,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_jinguangdeng"
+                android:id="@+id/bca_jinguangdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -205,7 +205,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_weishengjianyourenzhishideng"
+                android:id="@+id/bca_weishengjianyourenzhishideng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -221,7 +221,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_gaoyacangdeng"
+                android:id="@+id/bca_gaoyacangdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -240,7 +240,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianmenkaidiancifa"
+                android:id="@+id/bca_qianmenkaidiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -256,7 +256,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_dianshijidianyuan"
+                android:id="@+id/bca_dianshijidianyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -272,7 +272,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_qidongjidianqi"
+                android:id="@+id/bca_qidongjidianqi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -291,7 +291,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qianmenguandiancifa"
+                android:id="@+id/bca_qianmenguandiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -307,7 +307,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhongmenguanmendiacifa"
+                android:id="@+id/bca_zhongmenguanmendiacifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -323,7 +323,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_weishengjianqiangzhipaiwufa"
+                android:id="@+id/bca_weishengjianqiangzhipaiwufa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -342,7 +342,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_penshuidianji"
+                android:id="@+id/bca_penshuidianji"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -358,7 +358,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhongmenkaimendiancifa"
+                android:id="@+id/bca_zhongmenkaimendiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -374,7 +374,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_nuanshuidiancifa"
+                android:id="@+id/bca_nuanshuidiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -393,7 +393,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_qilaba"
+                android:id="@+id/bca_qilaba"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -409,7 +409,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_lupaideng"
+                android:id="@+id/bca_lupaideng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -425,7 +425,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_lupaidianyuan"
+                android:id="@+id/bca_lupaidianyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -444,7 +444,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_zuoqianzhuanxiang"
+                android:id="@+id/bca_zuoqianzhuanxiang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -460,7 +460,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_yuedudengshuru"
+                android:id="@+id/bca_yuedudengshuru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -476,7 +476,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_houcangmendianciganyingshixianweikaiguan"
+                android:id="@+id/bca_houcangmendianciganyingshixianweikaiguan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -495,7 +495,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_youqianxhuanxiang"
+                android:id="@+id/bca_youqianxhuanxiang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -511,7 +511,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_dingdanbaideng"
+                android:id="@+id/bca_dingdanbaideng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -527,7 +527,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_fadianjishuiweichuanganqidianyuan"
+                android:id="@+id/bca_fadianjishuiweichuanganqidianyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -546,7 +546,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_yuguaqikuaidang"
+                android:id="@+id/bca_yuguaqikuaidang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -562,7 +562,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_dingshuangbaideng"
+                android:id="@+id/bca_dingshuangbaideng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -578,7 +578,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_cedianzilupai"
+                android:id="@+id/bca_cedianzilupai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -597,7 +597,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_kongtiaokaiguandianyuan"
+                android:id="@+id/bca_kongtiaokaiguandianyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -613,7 +613,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_jiashiyuandingdeng"
+                android:id="@+id/bca_jiashiyuandingdeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -629,7 +629,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_disansuidongqiaokongzhidiancifa"
+                android:id="@+id/bca_disansuidongqiaokongzhidiancifa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -648,7 +648,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_ganzaoji"
+                android:id="@+id/bca_ganzaoji"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -664,7 +664,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_youqianzhuanxiang"
+                android:id="@+id/bca_youqianzhuanxiang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -680,7 +680,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_weishengjian"
+                android:id="@+id/bca_weishengjian"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -699,7 +699,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_shigaodeng"
+                android:id="@+id/bca_shigaodeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -715,7 +715,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zuoqianzhuanxiang"
+                android:id="@+id/bca_zuoqianzhuanxiang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -731,7 +731,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_zhizongdianyuanjidianqi"
+                android:id="@+id/bca_zhizongdianyuanjidianqi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -750,7 +750,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_yuguaqimandang"
+                android:id="@+id/bca_yuguaqimandang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -766,7 +766,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_dinglandeng"
+                android:id="@+id/bca_dinglandeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -782,7 +782,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_houdianzilupai"
+                android:id="@+id/bca_houdianzilupai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -801,7 +801,7 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/bc_jiansuqidianyuan"
+                android:id="@+id/bca_jiansuqidianyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -817,7 +817,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_xinglijiadeng"
+                android:id="@+id/bca_xinglijiadeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -833,7 +833,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/bc_qiandianzilupai"
+                android:id="@+id/bca_qiandianzilupai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
