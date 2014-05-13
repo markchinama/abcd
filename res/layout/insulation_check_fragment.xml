@@ -14,7 +14,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:text="绝缘电阻"
+                android:text="@string/jueyuandianzu"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
 
@@ -23,7 +23,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="312"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -34,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:text="绝缘检测"
+                android:text="@string/jueyuanjiance"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
 
@@ -43,7 +42,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="312"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -54,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:text="绝缘检测仪状态"
+                android:text="@string/jueyuanjianceyizhuangtai"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
 
@@ -63,7 +61,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="312"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>

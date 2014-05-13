@@ -110,7 +110,6 @@
                     android:layout_height="70dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="78%"
                     android:textColor="#000000"
                     android:textSize="30px" />
 
@@ -151,7 +150,6 @@
                     android:layout_height="70dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="234KW"
                     android:textColor="#000000"
                     android:textSize="30px" />
 
@@ -192,7 +190,6 @@
                     android:layout_height="70dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="234KW"
                     android:textColor="#000000"
                     android:textSize="30px" />
 
@@ -296,7 +293,6 @@
                 android:layout_marginTop="3px"
                 android:background="@drawable/numberbg"
                 android:gravity="center"
-                android:text="22"
                 android:textColor="#ffffff"
                 android:textSize="10px" />
 
@@ -315,8 +311,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="55px"
-            android:text="空调"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+            android:text="@string/kongtiao"
+            android:textSize="20dp" />
 
         <!-- 横杆 温度调节 -->
 
@@ -356,8 +352,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20px"
             android:layout_marginTop="55px"
-            android:text="功率"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+            android:text="@string/gonglv"
+            android:textSize="20dp" />
 
         <!-- 功率 完 -->
 
@@ -383,7 +379,6 @@
                 android:layout_marginTop="3px"
                 android:background="@drawable/numberbg"
                 android:gravity="center"
-                android:text="1000"
                 android:textColor="#ffffff"
                 android:textSize="10px" />
 

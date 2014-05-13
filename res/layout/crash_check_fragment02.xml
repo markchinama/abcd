@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical|right"
-                android:text="碰撞发生时间"
+                android:text="@string/pengzhuangfashengshijian"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
 
@@ -34,7 +34,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -49,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical|right"
-                android:text="保护状态"
+                android:text="@string/baohuzhuangtai"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
 
@@ -57,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="已解除保护"
+                android:text="@string/yijiechubaohu"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>

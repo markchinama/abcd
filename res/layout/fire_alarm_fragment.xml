@@ -16,7 +16,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text="传感器S1"
+                android:text="@string/sensor1"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -29,7 +29,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text="传感器S2"
+                android:text="@string/sensor2"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -42,7 +42,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text="传感器S3"
+                android:text="@string/sensor3"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -55,7 +55,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text="传感器S4"
+                android:text="@string/sensor4"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -68,7 +68,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text="传感器S5"
+                android:text="@string/sensor5"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -81,7 +81,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text="传感器S6"
+                android:text="@string/sensor6"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -94,7 +94,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text="传感器S7"
+                android:text="@string/sensor7"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -107,7 +107,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text="传感器S8"
+                android:text="@string/sensor8"
                 android:textColor="#5e3a14"
                 android:textSize="20dp" />
         </TableRow>
@@ -127,7 +127,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -141,7 +140,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -155,7 +153,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -169,7 +166,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -183,7 +179,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -197,7 +192,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -211,7 +205,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -225,14 +218,11 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
     </TableLayout>
-    
-    
-    
+
     <TableLayout
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -247,7 +237,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -261,7 +250,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -275,7 +263,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -289,7 +276,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -303,7 +289,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -317,7 +302,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -331,7 +315,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
@@ -345,14 +328,11 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#ff0000"
                 android:textSize="20dp" />
         </TableRow>
     </TableLayout>
 
-    
-    
     <TableLayout
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -367,7 +347,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -381,7 +360,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -395,7 +373,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -409,7 +386,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -423,7 +399,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -437,7 +412,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -451,7 +425,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
@@ -465,15 +438,11 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#6F2BD5"
                 android:textSize="20dp" />
         </TableRow>
     </TableLayout>
-    
-   
-    
-    
+
     <TableLayout
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -488,7 +457,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -502,7 +470,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -516,7 +483,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -530,7 +496,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -544,7 +509,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -558,7 +522,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -572,7 +535,6 @@
                 android:layout_gravity="center"
                 android:background="@drawable/darkbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
@@ -586,9 +548,9 @@
                 android:layout_gravity="center"
                 android:background="@drawable/brightbg"
                 android:gravity="center"
-                android:text=""
                 android:textColor="#4DB34D"
                 android:textSize="20dp" />
         </TableRow>
     </TableLayout>
+
 </LinearLayout>

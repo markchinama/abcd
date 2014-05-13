@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="车速"
+                    android:text="@string/chesu"
                     android:textColor="#5e3a14"
                     android:textSize="30dp" />
 
@@ -53,7 +53,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="35dp" />
 
@@ -63,7 +62,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="5dp"
                         android:gravity="center"
-                        android:text="km/h"
+                        android:text="@string/kmh"
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </LinearLayout>
@@ -81,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="档位"
+                    android:text="@string/dangwei"
                     android:textColor="#5e3a14"
                     android:textSize="30dp" />
 
@@ -91,7 +90,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text=""
                     android:textColor="#000000"
                     android:textSize="35dp" />
             </LinearLayout>
@@ -108,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="刹车"
+                    android:text="@string/shache"
                     android:textColor="#5e3a14"
                     android:textSize="30dp" />
 
@@ -118,7 +116,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text=""
                     android:textColor="#000000"
                     android:textSize="35dp" />
             </LinearLayout>
@@ -135,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="油门"
+                    android:text="@string/youmen"
                     android:textColor="#5e3a14"
                     android:textSize="30dp" />
 
@@ -145,7 +142,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="80%"
                     android:textColor="#000000"
                     android:textSize="35dp" />
             </LinearLayout>
@@ -176,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="电制动"
+                    android:text="@string/dianzhidong"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -193,7 +189,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="APU放电使能"
+                    android:text="@string/apufangdianshineng"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -210,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="钥匙ACC"
+                    android:text="@string/yaoshiacc"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -227,7 +223,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="空调启动"
+                    android:text="@string/kongtiaoqidong"
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -247,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="电机制动优先信号"
+                    android:text="@string/dianjizhidongyouxianxinhao"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -264,7 +260,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="APU工作使能"
+                    android:text="@string/apugongzuoshineng"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -281,7 +277,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="钥匙ON"
+                    android:text="@string/yaoshion"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -298,7 +294,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="空调功能使能"
+                    android:text="@string/kongtiaogongnengshineng"
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -318,7 +314,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="驻车信号"
+                    android:text="@string/zhuchexinhao"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -335,7 +331,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="主接触器状态"
+                    android:text="@string/zhujiechuqixinhao"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -352,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="钥匙ST"
+                    android:text="@string/yaoshist"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -369,7 +365,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="空调功率衰减使能"
+                    android:text="@string/kongtiaogonglvshuaijianshineng"
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -389,7 +385,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="制动信号"
+                    android:text="@string/zhidongxinhao"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -406,7 +402,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="高压手闸信号"
+                    android:text="@string/gaoyashouzhaxinhao"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -423,7 +419,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="READY"
+                    android:text="@string/ready"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -440,7 +436,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="水泵启动"
+                    android:text="@string/shuibengqidong"
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -460,7 +456,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="怠速开关 "
+                    android:text="@string/yisukaiguan"
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -487,7 +483,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="整车气压值"
+                        android:text="@string/zhengcheqiyazhi"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -496,7 +492,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -507,7 +502,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="剩余充电时间"
+                        android:text="@string/shengyuchongdianshijian"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -516,7 +511,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -527,7 +521,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="发电机发电功率"
+                        android:text="@string/fandianjifadiangonglv"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -536,7 +530,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -547,7 +540,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="转速转矩模式"
+                        android:text="@string/zhuansuzhuanjumoshi"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -556,7 +549,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -573,7 +565,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="转动方向"
+                        android:text="@string/zhuandongfangxiang"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -582,7 +574,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -593,7 +584,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="电机扭矩命令值"
+                        android:text="@string/dianjiniujuminglingzhi"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -602,7 +593,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -613,7 +603,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="空调衰减比例"
+                        android:text="@string/kongtiaoshuaijianbili"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -622,7 +612,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -639,7 +628,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="本次行驶里程"
+                        android:text="@string/bencixingshilicheng"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -648,7 +637,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -659,7 +647,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="可行驶里程"
+                        android:text="@string/kexingshilicheng"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -668,7 +656,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>
@@ -679,7 +666,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="总里程"
+                        android:text="@string/zonglicheng"
                         android:textColor="#5e3a14"
                         android:textSize="20dp" />
 
@@ -688,7 +675,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text=""
                         android:textColor="#000000"
                         android:textSize="20dp" />
                 </TableRow>

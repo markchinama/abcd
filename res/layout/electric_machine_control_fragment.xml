@@ -19,7 +19,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="直流侧电压"
+                    android:text="@string/zhiliucedianya"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -28,7 +28,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机相电流"
+                    android:text="@string/dianjixiangdianliu"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -59,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机温度"
+                    android:text="@string/dianjiwendu"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -79,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机控制器温度"
+                    android:text="@string/dianjikongzhiqiwendu"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -88,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -105,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机最大制动转矩"
+                    android:text="@string/dianjizuidazhidongzhuanju"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -114,7 +114,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机最大制动功率"
+                    android:text="@string/dianjizuidazhidonggonglv"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -134,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -145,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机最大电动转矩"
+                    android:text="@string/dianjizuidadiandongzhuanju"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -154,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -165,7 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机最大驱动功率"
+                    android:text="@string/dianjizuidaqudonggonglv"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -174,7 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -191,7 +191,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机转速"
+                    android:text="@string/dianjizhuansu"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -200,7 +200,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -211,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机转矩"
+                    android:text="@string/dianjizhuanju"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -220,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -253,7 +253,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="READY信号"
+                    android:text="@string/readyxinhao"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -262,7 +262,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -273,7 +273,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="主接触器状态"
+                    android:text="@string/zhujiechuqizhuangtai"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -282,7 +282,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -293,7 +293,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机运转方向"
+                    android:text="@string/dianjiyunzhuanfangxiang"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -302,7 +302,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -319,7 +319,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="能量流动方向"
+                    android:text="@string/nengliangliudongfangxiang"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -328,7 +328,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -339,7 +339,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="电机控制器运行状态"
+                    android:text="@string/dianjikongzhiqiyunxingzhuangtai"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -348,7 +348,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -365,7 +365,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="转速转矩模式"
+                    android:text="@string/zhuansuzhuanjumoshi"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -374,7 +374,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>
@@ -385,7 +385,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="空转"
+                    android:text="@string/kongzhuan"
                     android:textColor="#5e3a14"
                     android:textSize="20dp" />
 
@@ -394,7 +394,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text=""
+                    
                     android:textColor="#000000"
                     android:textSize="20dp" />
             </TableRow>

@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:text="车身CAN"
+            android:text="@string/cheshencan"
             android:textColor="#ffffff"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -24,7 +24,7 @@
             android:id="@+id/bca_closebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="700dp"
+            android:layout_marginLeft="800dp"
             android:background="@drawable/closebutton" />
     </LinearLayout>
 
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="前门踏步灯"
+                android:text="@string/qianmentabudeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="左行李舱照明灯"
+                android:text="@string/zuoxinglicangzhaomingdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="后雾灯"
+                android:text="@string/houwudeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="远光灯"
+                android:text="@string/yuanguangdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -114,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="右行李舱照明灯"
+                android:text="@string/youxinglicangzhaomingdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="制动灯"
+                android:text="@string/zhidongdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -149,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="前雾灯"
+                android:text="@string/qianwudeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -165,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="中门踏步灯"
+                android:text="@string/zhongmentabudeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="倒车灯"
+                android:text="@string/daochedeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="近光灯(控制继电器)"
+                android:text="@string/jinguangdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -216,7 +216,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="卫生间有人指示灯"
+                android:text="@string/weishengjianyourenzhishideng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -232,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="高压舱灯"
+                android:text="@string/gaoyacangdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -251,7 +251,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="前门开电磁阀"
+                android:text="@string/qianmenkaidiancifa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -267,7 +267,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="电视机电源"
+                android:text="@string/dianshijidianyuan"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -283,7 +283,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="启动继电器"
+                android:text="@string/qidongjidianqi"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -302,7 +302,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="前门关电磁阀"
+                android:text="@string/qianmenguandiancifa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -318,7 +318,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="中门关电磁阀"
+                android:text="@string/zhongmenguanmendiacifa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -334,7 +334,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="卫生间强制排污阀"
+                android:text="@string/weishengjianqiangzhipaiwufa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -353,7 +353,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="喷水电机"
+                android:text="@string/penshuidianji"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -369,7 +369,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="中文开门电磁阀"
+                android:text="@string/zhongmenkaimendiancifa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -385,7 +385,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="暖水电磁阀"
+                android:text="@string/nuanshuidiancifa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -404,7 +404,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="气喇叭"
+                android:text="@string/qilaba"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -420,7 +420,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="路牌灯"
+                android:text="@string/lupaideng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -436,7 +436,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="路牌电源"
+                android:text="@string/lupaidianyuan"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -455,7 +455,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="左前转向"
+                android:text="@string/zuoqianzhuanxiang"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -471,7 +471,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="阅读灯输出"
+                android:text="@string/yuedudengshuru"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -487,7 +487,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="后仓门电磁感应式限位开关"
+                android:text="@string/houcangmendianciganyingshixianweikaiguan"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -506,7 +506,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="右前转向"
+                android:text="@string/youqianxhuanxiang"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -522,7 +522,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="顶单白灯"
+                android:text="@string/dingdanbaideng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -538,7 +538,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="发动机水位传感器电源"
+                android:text="@string/fadianjishuiweichuanganqidianyuan"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -557,7 +557,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="右前转向"
+                android:text="@string/yuguaqikuaidang"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -573,7 +573,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="顶双白灯"
+                android:text="@string/dingshuangbaideng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -589,7 +589,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="侧电子路牌"
+                android:text="@string/cedianzilupai"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -608,7 +608,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="空调电源开关"
+                android:text="@string/kongtiaokaiguandianyuan"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -624,7 +624,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="驾驶员顶灯"
+                android:text="@string/jiashiyuandingdeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -640,7 +640,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="第三随动桥控制电磁阀"
+                android:text="@string/disansuidongqiaokongzhidiancifa"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -659,7 +659,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="干燥器"
+                android:text="@string/ganzaoji"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -675,7 +675,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="右转向灯"
+                android:text="@string/youqianzhuanxiang"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -691,7 +691,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="卫生间"
+                android:text="@string/weishengjian"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -710,7 +710,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="示高灯"
+                android:text="@string/shigaodeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -726,7 +726,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="左前转向"
+                android:text="@string/zuoqianzhuanxiang"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -742,7 +742,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="至总电源继电器"
+                android:text="@string/zhizongdianyuanjidianqi"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -761,7 +761,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="雨刮器慢档"
+                android:text="@string/yuguaqimandang"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -777,7 +777,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="顶蓝灯"
+                android:text="@string/dinglandeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -793,7 +793,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="后电子路牌"
+                android:text="@string/houdianzilupai"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>
@@ -812,7 +812,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="减速器电源"
+                android:text="@string/jiansuqidianyuan"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -828,7 +828,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="行李架灯"
+                android:text="@string/xinglijiadeng"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -844,7 +844,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:text="前电子路牌"
+                android:text="@string/qiandianzilupai"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </TableRow>

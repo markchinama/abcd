@@ -1,34 +1,28 @@
 package com.mark.bus.app;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.mark.bus.R;
-
-import android.app.ActionBar;
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.Window;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemSelectedListener;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
 	private static int currentTopButtonId = 4;
 	private ImageButton homeButton;
@@ -267,7 +261,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void showFragment(Fragment fragment) {
-		FragmentTransaction transaction = getFragmentManager()
+		FragmentTransaction transaction = this.getSupportFragmentManager()
 				.beginTransaction();
 		// Replace whatever is in the fragment_container view with this
 		// fragment,
@@ -376,11 +370,10 @@ public class MainActivity extends Activity {
 		@Override
 		public void handleMessage(Message msg) {
 
-			CrashCheckFragment crashCheckFragment = new CrashCheckFragment(
-					ba.getCrashStatus());
+			CrashCheckFragment crashCheckFragment = new CrashCheckFragment();
 
 			FragmentTransaction transaction = MainActivity.this
-					.getFragmentManager().beginTransaction();
+					.getSupportFragmentManager().beginTransaction();
 
 			transaction.replace(R.id.info_fragment_container,
 					crashCheckFragment);

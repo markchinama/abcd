@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:text="碰撞检测保护"
+                android:text="@string/pengzhuangjiancebaohu"
                 android:textColor="#ffffff"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="你的车辆发生碰撞，\r\n已启用碰撞保护"
+                android:text="@string/crashprotected"
                 android:textColor="#000000"
                 android:textSize="40dp" />
         </LinearLayout>
