@@ -12,7 +12,7 @@ public class InfoList {
 
 	// TODO Auto-generated constructor stub
 
-	public static List<String> getDataList() {
+	public static List<Integer> getDataList() {
 
 		if (data != null)
 			return data;

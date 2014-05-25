@@ -4,15 +4,17 @@ import java.util.Map;
 
 import com.mark.bus.app.MainActivity.CrashHandler;
 import com.mark.bus.app.MainActivity.ModelHandler;
+import com.mark.bus.data.DataFromWholeController1;
 
 import android.app.Application;
 
 public class BusApplication extends Application {
 
+	private DataFromWholeController1 dw1 = new DataFromWholeController1();
 	private ModelHandler modelhandler = null;
 
 	private CrashHandler crashHandler = null;
-	
+
 	public CrashHandler getCrashHandler() {
 		return crashHandler;
 	}
@@ -59,5 +61,6 @@ public class BusApplication extends Application {
 	public ModelHandler getHandler() {
 		return modelhandler;
 	}
+
 
 }

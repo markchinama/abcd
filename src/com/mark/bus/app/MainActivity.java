@@ -1,6 +1,8 @@
 package com.mark.bus.app;
 
 import com.mark.bus.R;
+import com.mark.bus.data.DataHandler;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,6 +27,7 @@ import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity {
 
+	DataHandler dh = new DataHandler();
 	private static int currentTopButtonId = 4;
 	private ImageButton homeButton;
 	private ImageButton infoButton;
@@ -338,8 +342,11 @@ public class MainActivity extends FragmentActivity {
 
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+			// TODO Auto-generated method
+			// stub
+			System.out.println(dh.getInt(bid));
 			showPress(bid);
+
 			if (v.equals(controlButton)) {
 				showFragment(buttonsFragment);
 				return;
@@ -355,7 +362,6 @@ public class MainActivity extends FragmentActivity {
 				return;
 			}
 		}
-
 	}
 
 	final class ModelHandler extends Handler {
@@ -382,4 +388,5 @@ public class MainActivity extends FragmentActivity {
 			transaction.commitAllowingStateLoss();
 		}
 	}
+
 }

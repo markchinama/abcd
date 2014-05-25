@@ -22,7 +22,7 @@ public class BLAdapter extends BaseAdapter {
 	private List blist = new ArrayList();
 	private int current = 0;
 	private BusApplication ba = null;
-	private List<Map<String, Object>> mData;
+	private List<Integer> mData;
 	private LayoutInflater mInflater;
 	private Fragment fra;
 	private View view;
@@ -62,7 +62,10 @@ public class BLAdapter extends BaseAdapter {
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
-		holder.viewBtn.setText((CharSequence) mData.get(position));
+		System.out.println(mData.get(position));
+		holder.viewBtn.setText((CharSequence) view.getContext().getString(
+				mData.get(position)));
+
 		blist.add(holder.viewBtn);
 		holder.viewBtn.setOnClickListener(new InfoOnClickListener(position));
 		if (position == 0) {
