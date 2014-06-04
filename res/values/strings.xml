@@ -202,5 +202,28 @@
     <string name="yitihuapeidiangui">一体化配电柜</string>
     <string name="cheshencan">车身CAN</string>
     <string name="pengzhuangjiancemokuai">碰撞检测模块</string>
-	
+    <string name="zhuansumoshi">转速模式</string>
+    <string name="zhuanjumoshi">转矩模式</string>
+    <string name="tingzhi">停止</string>
+    <string name="zhengxiangzhuanju">正向转矩</string>
+    <string name="zhengxiangzhuansu">正向转速</string>
+    <string name="fanxiangzhuanju">反向转矩</string>
+    <string name="fanxiangzhuansu">反向转速</string>
+    <string name="yunxuchongdian">允许充电</string>
+    <string name="jinzhichongdian">禁止充电</string>
+    <string name="weilianjie">未连接</string>
+    <string name="yilianjie">已连接</string>
+    <string name="insulationstatus01">正在自检</string>
+    <string name="insulationstatus02">工作正常</string>
+    <string name="insulationstatus03">接线故障</string>
+    <string name="insulationstatus04">高压正极对地绝缘电阻较小</string>
+    <string name="insulationstatus05">高压负极对地绝缘电阻较小</string>
+    <string name="insulationstatus06">设备故障</string>
+    <string name="insulationwarning01">正常</string>
+    <string name="insulationwarning02">二级告警  绝缘电阻小于500K</string>
+    <string name="insulationwarning03">一级告警  绝缘电阻小于 80K</string>
+    <string name="zuozhuanxiangdeng">左转向灯</string>
+    <string name="youzhuanxiangdeng" >右转向灯</string>
+   
+    
 </resources>

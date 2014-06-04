@@ -2,34 +2,35 @@ package com.mark.bus.data;
 
 public class DataHandler1 {
 
-	private static DataFromWholeController1 dw1 = new DataFromWholeController1();
-	private static DataFromWholeController2 dw2 = new DataFromWholeController2();
-	private static DataFromWholeController3 dw3 = new DataFromWholeController3();
-	private static DataFromWholeController5 dw5 = new DataFromWholeController5();
-	private static DataFromWholeController7 dw7 = new DataFromWholeController7();
-	private static DataFromWholeController8 dw8 = new DataFromWholeController8();
-	private static DataFromWholeController9 dw9 = new DataFromWholeController9();
+	public static DataFromWholeController1 dw1 = new DataFromWholeController1();
+	public static DataFromWholeController2 dw2 = new DataFromWholeController2();
+	public static DataFromWholeController3 dw3 = new DataFromWholeController3();
+	public static DataFromWholeController5 dw5 = new DataFromWholeController5();
+	public static DataFromWholeController7 dw7 = new DataFromWholeController7();
+	public static DataFromWholeController8 dw8 = new DataFromWholeController8();
+	public static DataFromWholeController9 dw9 = new DataFromWholeController9();
 
-	private static DataFromBMS1 db1 = new DataFromBMS1();
-	private static DataFromBMS2 db2 = new DataFromBMS2();
-	private static DataFromBMS3 db3 = new DataFromBMS3();
-	private static DataFromBMS4 db4 = new DataFromBMS4();
+	public static DataFromBMS1 db1 = new DataFromBMS1();
+	public static DataFromBMS2 db2 = new DataFromBMS2();
+	public static DataFromBMS3 db3 = new DataFromBMS3();
+	public static DataFromBMS4 db4 = new DataFromBMS4();
 
-	private static DataFromInsulation di = new DataFromInsulation();
+	public static DataFromInsulation di = new DataFromInsulation();
 
-	private static DataFromInstrument1 din1 = new DataFromInstrument1();
-	private static DataFromInstrument2 din2 = new DataFromInstrument2();
+	public static DataFromInstrument1 din1 = new DataFromInstrument1();
+	public static DataFromInstrument2 din2 = new DataFromInstrument2();
 
-	private static DataFromEM1 de1 = new DataFromEM1();
-	private static DataFromEM2 de2 = new DataFromEM2();
-	private static DataFromEM3 de3 = new DataFromEM3();
+	public static DataFromEM1 de1 = new DataFromEM1();
+	public static DataFromEM2 de2 = new DataFromEM2();
+	public static DataFromEM3 de3 = new DataFromEM3();
 
-	private static DataFromIntegrationCabin dic = new DataFromIntegrationCabin();
+	public static DataFromIntegrationCabin dic = new DataFromIntegrationCabin();
 
-	private static DataFromAC da = new DataFromAC();
+	public static DataFromAC da = new DataFromAC();
 
-	private static DataFromFireAlarmSensor dfa = new DataFromFireAlarmSensor();
+	public static DataFromFireAlarmSensor dfa = new DataFromFireAlarmSensor();
 
+	public static DataFromBusCanModule dbcm = new DataFromBusCanModule();
 	public static void testd() {
 		System.out.println("this is form c through jni");
 	}

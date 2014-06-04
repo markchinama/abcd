@@ -25,6 +25,10 @@ public class DataFromBusCanModule extends BusRecData {
 	public int youxinglicangzhaomingdeng;
 	public int zuoxinglicangzhaomingdeng;
 	public int yuguaqimandang;
+	public int shigaodeng;
+	public int labazhuanhuankaiguan;
+	public int kongtiaokaiguandianyuan;
+	public int yuguaqikuaidang;
 	public int youqianzhuanxiang;
 	public int zuoqianzhuanxiang;
 	public int penshuidianji;

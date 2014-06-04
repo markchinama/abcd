@@ -108,7 +108,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bma_zuigaoweidudianchixiangweizhi"
+                    android:id="@+id/bma_zuigaowendudianchixiangweizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -172,7 +172,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/bma_dianchizuididianya"
+                    android:id="@+id/bma_dantizuididianya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"

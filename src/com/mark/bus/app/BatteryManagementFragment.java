@@ -13,6 +13,10 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.mark.bus.R;
+import com.mark.bus.data.DataFromBMS1;
+import com.mark.bus.data.DataFromBMS2;
+import com.mark.bus.data.DataFromBMS3;
+import com.mark.bus.data.DataHandler1;
 
 public class BatteryManagementFragment extends Fragment {
 
@@ -37,12 +41,136 @@ public class BatteryManagementFragment extends Fragment {
 	private MotionEvent mPreviousUpEvent;
 	private View view;
 
+	private TextView tv_dianchizongdianya;
+	private TextView tv_dianchisoc;
+	private TextView tv_dianchizongxiangshu;
+	private TextView tv_shengyunengliang;
+	private TextView tv_shunshigonglv;
+	private TextView tv_shunshigonghao;
+	private TextView tv_dianchichongfangdiandianliu;
+	private TextView tv_mokuaizuigaowendu;
+	private TextView tv_mokuaizuidiwendu;
+	private TextView tv_zuigaowendudianchiweizhi;
+	private TextView tv_zuidiwendudianchiweizhi;
+	private TextView tv_dantizuigaodianya;
+	private TextView tv_dantizuididianya;
+	private TextView tv_zuigaodianyadianchiweizhi;
+	private TextView tv_zuididianyadianchiweizhi;
+	private TextView tv_zuigaodianyadianchixiangjieshu;
+	private TextView tv_zuididianyadianchixiangjieshu;
+	private TextView tv_chongdianzhuanglianjiebiaozhiwei;
+	private TextView tv_jinzhichongdianbiaozhi;
+
+	public void initialize() {
+		DataFromBMS1 db1 = DataHandler1.db1;
+		DataFromBMS2 db2 = DataHandler1.db2;
+		DataFromBMS3 db3 = DataHandler1.db3;
+		tv_dianchizongdianya = (TextView) view
+				.findViewById(R.id.bmf_dianchizongdianya);
+		tv_dianchizongdianya.setText((CharSequence) Float
+				.toString(db1.dianchixitongshishizongdianya));
+
+		tv_dianchisoc = (TextView) view.findViewById(R.id.bmf_dianchisoc);
+		tv_dianchizongdianya.setText((CharSequence) Float
+				.toString(db1.dianchisoc));
+
+		tv_dianchizongxiangshu = (TextView) view
+				.findViewById(R.id.bmf_dianchizongxiangshu);
+		tv_dianchizongxiangshu.setText((CharSequence) Integer
+				.toString(db2.dianchizongxiangshu));
+
+		tv_shengyunengliang = (TextView) view
+				.findViewById(R.id.bmf_shengyunengliang);
+		tv_shengyunengliang.setText((CharSequence) Float
+				.toString(db3.shengyunengliang));
+
+		tv_shunshigonglv = (TextView) view.findViewById(R.id.bmf_shunshigonglv);
+		tv_shunshigonghao = (TextView) view
+				.findViewById(R.id.bmf_shunshigonghao);
+
+		tv_dianchichongfangdiandianliu = (TextView) view
+				.findViewById(R.id.bmf_dianchichongfangdiandianliu);
+		tv_dianchichongfangdiandianliu.setText((CharSequence) Float
+				.toString(db1.dianchishishidianliu));
+		// ////////////////////////////////////////////////
+		tv_mokuaizuigaowendu = (TextView) view
+				.findViewById(R.id.bmf_mokuaizuigaowendu);
+
+		tv_mokuaizuidiwendu = (TextView) view
+				.findViewById(R.id.bmf_mokuaizuidiwendu);
+		// /////////////////////////////////////////////////
+		tv_zuigaowendudianchiweizhi = (TextView) view
+				.findViewById(R.id.bmf_zuigaoweidudianchiweizhi);
+		tv_zuigaowendudianchiweizhi.setText((CharSequence) Integer
+				.toString(db3.zuigaowendudianchiweizhi));
+
+		tv_zuidiwendudianchiweizhi = (TextView) view
+				.findViewById(R.id.bmf_zuidiweidudianchiweizhi);
+		tv_zuidiwendudianchiweizhi.setText((CharSequence) Integer
+				.toString(db3.zuidiwendudianchiweizhi));
+
+		// /////////////////////////////////////////////////
+		tv_dantizuigaodianya = (TextView) view
+				.findViewById(R.id.bmf_dantizuigaodianya);
+
+		tv_dantizuididianya = (TextView) view
+				.findViewById(R.id.bmf_dantizuididianya);
+
+		// /////////////////////////////////////////////////
+
+		tv_zuigaodianyadianchiweizhi = (TextView) view
+				.findViewById(R.id.bmf_zuigaodianyadianchixiangweizhi);
+		tv_zuigaodianyadianchiweizhi.setText((CharSequence) Integer
+				.toString(db3.zuigaodianyadianchiweizhi));
+
+		tv_zuididianyadianchiweizhi = (TextView) view
+				.findViewById(R.id.bmf_zuididianyadianchixiangweizhi);
+		tv_zuididianyadianchiweizhi.setText((CharSequence) Integer
+				.toString(db3.zuididianyadianchiweizhi));
+
+		tv_zuigaodianyadianchixiangjieshu = (TextView) view
+				.findViewById(R.id.bmf_zuigaodianyadianchixiangjieshu);
+		tv_zuigaodianyadianchixiangjieshu.setText((CharSequence) Integer
+				.toString(db3.zuigaodianyadianchixiangshu));
+
+		tv_zuididianyadianchixiangjieshu = (TextView) view
+				.findViewById(R.id.bmf_zuididianyadianchixiangjieshu);
+		tv_zuididianyadianchixiangjieshu.setText((CharSequence) Integer
+				.toString(db3.zuigaodianyadianchixiangshu));
+
+		tv_chongdianzhuanglianjiebiaozhiwei = (TextView) view
+				.findViewById(R.id.bmf_chongdianzhuanglianjiebiaozhiwei);
+		tv_chongdianzhuanglianjiebiaozhiwei.setText((CharSequence) Integer
+				.toString(db1.chongdianzhuanglianjiebiaozhiwei));
+
+		tv_jinzhichongdianbiaozhi = (TextView) view
+				.findViewById(R.id.bmf_jinzhichongdianbiaozhi);
+		if (db1.shifoujinzhichongdianbiaozhiwei == 1) {
+			tv_jinzhichongdianbiaozhi.setText((CharSequence) this
+					.getResources().getString(R.string.jinzhichongdian));
+		} else {
+			tv_jinzhichongdianbiaozhi.setText((CharSequence) this
+					.getResources().getString(R.string.yunxuchongdian));
+		}
+		tv_chongdianzhuanglianjiebiaozhiwei.setText((CharSequence) Integer
+				.toString(db1.shifoujinzhichongdianbiaozhiwei));
+		if (db1.shifoujinzhichongdianbiaozhiwei == 1) {
+			tv_chongdianzhuanglianjiebiaozhiwei.setText((CharSequence) this
+					.getResources().getString(R.string.yilianjie));
+		} else {
+			tv_chongdianzhuanglianjiebiaozhiwei.setText((CharSequence) this
+					.getResources().getString(R.string.weilianjie));
+		}
+	}
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
 		view = inflater.inflate(R.layout.battery_management_fragment,
 				container, false);
+
+		initialize();
 
 		collapse = (ImageButton) view.findViewById(R.id.collapse);
 

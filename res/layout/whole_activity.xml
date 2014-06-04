@@ -282,7 +282,7 @@
                     android:textSize="20dp" />
 
                 <ImageView
-                    android:id="@+id/wc_kongtiaogongnengshineng"
+                    android:id="@+id/wc_kongtiaogongzuoshineng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
