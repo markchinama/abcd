@@ -31,11 +31,51 @@ public class DataHandler1 {
 	public static DataFromFireAlarmSensor dfa = new DataFromFireAlarmSensor();
 
 	public static DataFromBusCanModule dbcm = new DataFromBusCanModule();
+
 	public static void testd() {
 		System.out.println("this is form c through jni");
 	}
 
-	public static void setDFA(int i1 ,int i2 ,int i3 ,int i4 ,int i5 ) {
+	public static void setDBCM(int[] i) {
+		dbcm.zhizongdianyuanjidianqi = i[0];
+		dbcm.weishangjiandeng = i[1];
+		dbcm.houcangmendianchiganyingshixianweikaiguan = i[2];
+		dbcm.weishengjianqiangzhipaiwu = i[3];
+		dbcm.qidongjidianqi = i[4];
+		dbcm.daochedeng = i[5];
+		dbcm.zhidongdeng = i[6];
+		dbcm.houwudeng = i[7];
+		dbcm.xinglijiadeng = i[8];
+		dbcm.dinglandeng = i[9];
+		dbcm.zuozhuanxiangdeng = i[10];
+		dbcm.youzhuanxiangdeng = i[11];
+		dbcm.jiashiyuandingdeng = i[12];
+		dbcm.dingshuangbaideng = i[13];
+		dbcm.dingdanbaideng = i[14];
+		dbcm.yuedudeng = i[15];
+		dbcm.zhongmenkaimendiancifa = i[16];
+		dbcm.zhongmenguanmendiancifa = i[17];
+		dbcm.dianshijidianyuan = i[18];
+		dbcm.weishengjianyourenzhishideng = i[19];
+		dbcm.zhongmentabudeng = i[20];
+		dbcm.youxinglicangzhaomingdeng = i[21];
+		dbcm.yuguaqimandang = i[23];
+		dbcm.shigaodeng = i[24];
+		dbcm.labazhuanhuankaiguan = i[25];
+		dbcm.kongtiaokaiguandianyuan = i[26];
+		dbcm.yuguaqikuaidang = i[27];
+		dbcm.youqianzhuanxiang = i[28];
+		dbcm.zuoqianzhuanxiang = i[29];
+		dbcm.penshuidianji = i[30];
+		dbcm.guanmendiancifa = i[31];
+		dbcm.kaimendiancifa = i[32];
+		dbcm.jinguangdeng = i[33];
+		dbcm.qianwudeng = i[34];
+		dbcm.yuanguangdeng = i[35];
+		dbcm.qianmentabudeng = i[36];
+	}
+
+	public static void setDFA(int i1, int i2, int i3, int i4, int i5) {
 		dfa.yanwubaojingqizhuangtai = i1;
 		dfa.sci = i2;
 		dfa.sbi = i3;

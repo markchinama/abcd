@@ -450,8 +450,8 @@ typedef struct  main_can_module_send{
 		unsigned char front_trun_left_light:1;
 
 		unsigned char :1;
-		unsigned char mid_door_off:1;
 		unsigned char mid_door_on:1;
+		unsigned char mid_door_off:1;
 		unsigned char tv_power:1;
 		unsigned char wc_occupied:1;
 		unsigned char mid_step:1;

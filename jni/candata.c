@@ -63,6 +63,7 @@ static jmethodID midSetDEM3;
 static jmethodID midSetDIC;
 static jmethodID midSetDAC;
 static jmethodID midSetFA;
+static jmethodID midSetDBCM;
 //void GetInstance(JNIEnv* env, jclass obj_class);
 
 void* thread_fun(void* arg) {
@@ -118,14 +119,90 @@ JNIEXPORT void JNICALL Java_com_mark_bus_data_DataHandler_initialize(JNIEnv* env
 	midSetDAC = (*env)->GetStaticMethodID(env, cls, "setDAC", "(IIIIIFF)V");
 
 	midSetFA = (*env)->GetStaticMethodID(env, cls, "setDFA", "(IIIII)V");
+	midSetDBCM = (*env)->GetStaticMethodID(env, cls, "setDBCM", "([I)V");
 }
 void handleDFA(JNIEnv *env, fire_alarm_send_data * pfa) {
-	int i1 = (int) pfa->device_status;
-	int i2 = (int) pfa->sensor_communication;
-	int i3 = (int) pfa->sensor_block;
-	int i4 = (int) pfa->sensor_issue;
-	int i5 = (int) pfa->life_signal;
-	(*env)->CallStaticIntMethod(env, cls, midSetFA, i1, i2, i3, i4, i5);
+
+}
+
+void handleDFA(JNIEnv *env, main_can_module_send_data * pcm) {
+	jintArray jintarray = (*env)->NewIntArray(env, 37);
+	(*env)->SetObjectArrayElement(env, jintarray, 0,
+			(jobject)((int) (pcm->relay_power)));
+	(*env)->SetObjectArrayElement(env, jintarray, 1,
+			(jobject)((int) (pcm->wc_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 2,
+			(jobject)((int) (pcm->rear_compartment_door_inductive_switch)));
+	(*env)->SetObjectArrayElement(env, jintarray, 3,
+			(jobject)((int) (pcm->wc_force_pollution_discharge)));
+	(*env)->SetObjectArrayElement(env, jintarray, 4,
+			(jobject)((int) (pcm->relay)));
+	(*env)->SetObjectArrayElement(env, jintarray, 5,
+			(jobject)((int) (pcm->back_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 6,
+			(jobject)((int) (pcm->break_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 7,
+			(jobject)((int) (pcm->rear_fog_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 8,
+			(jobject)((int) (pcm->luggage_shelf_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 9,
+			(jobject)((int) (pcm->top_blue_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 10,
+			(jobject)((int) (pcm->turn_right_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 11,
+			(jobject)((int) (pcm->turn_left_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 12,
+			(jobject)((int) (pcm->drive_top_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 13,
+			(jobject)((int) (pcm->top_double_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 14,
+			(jobject)((int) (pcm->top_single_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 15,
+			(jobject)((int) (pcm->read_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 16,
+			(jobject)((int) (pcm->mid_door_on)));
+	(*env)->SetObjectArrayElement(env, jintarray, 17,
+			(jobject)((int) (pcm->mid_door_off)));
+	(*env)->SetObjectArrayElement(env, jintarray, 18,
+			(jobject)((int) (pcm->tv_power)));
+	(*env)->SetObjectArrayElement(env, jintarray, 19,
+			(jobject)((int) (pcm->wc_occupied)));
+	(*env)->SetObjectArrayElement(env, jintarray, 20,
+			(jobject)((int) (pcm->mid_step)));
+	(*env)->SetObjectArrayElement(env, jintarray, 21,
+			(jobject)((int) (pcm->right_luggage_compartment_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 22,
+			(jobject)((int) (pcm->left_luggage_compartment_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 23,
+			(jobject)((int) (pcm->wiper_slow)));
+	(*env)->SetObjectArrayElement(env, jintarray, 24,
+			(jobject)((int) (pcm->height_show)));
+	(*env)->SetObjectArrayElement(env, jintarray, 25,
+			(jobject)((int) (pcm->trumpet_switch)));
+	(*env)->SetObjectArrayElement(env, jintarray, 26,
+			(jobject)((int) (pcm->ac_switch)));
+	(*env)->SetObjectArrayElement(env, jintarray, 27,
+			(jobject)((int) (pcm->wiper_quick)));
+	(*env)->SetObjectArrayElement(env, jintarray, 28,
+			(jobject)((int) (pcm->front_trun_right_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 29,
+			(jobject)((int) (pcm->front_trun_left_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 30,
+			(jobject)((int) (pcm->warter_electric_mechine)));
+	(*env)->SetObjectArrayElement(env, jintarray, 31,
+			(jobject)((int) (pcm->front_door_off)));
+	(*env)->SetObjectArrayElement(env, jintarray, 32,
+			(jobject)((int) (pcm->front_door_on)));
+	(*env)->SetObjectArrayElement(env, jintarray, 33,
+			(jobject)((int) (pcm->near_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 34,
+			(jobject)((int) (pcm->front_fog)));
+	(*env)->SetObjectArrayElement(env, jintarray, 35,
+			(jobject)((int) (pcm->far_light)));
+	(*env)->SetObjectArrayElement(env, jintarray, 36,
+			(jobject)((int) (pcm->front_step_light)));
+
+	(*env)->CallStaticIntMethod(env, cls, midSetFA, jintarray);
 
 }
 void handleDAC(JNIEnv *env, ac_can_send_data * pac) {
