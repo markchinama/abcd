@@ -223,7 +223,12 @@
     <string name="insulationwarning02">二级告警  绝缘电阻小于500K</string>
     <string name="insulationwarning03">一级告警  绝缘电阻小于 80K</string>
     <string name="zuozhuanxiangdeng">左转向灯</string>
-    <string name="youzhuanxiangdeng" >右转向灯</string>
-   
-    
+    <string name="youzhuanxiangdeng">右转向灯</string>
+    <string name="zijian">自检</string>
+    <string name="zhengchang">正常</string>
+    <string name="tongxunguzhang">通讯故障</string>
+    <string name="duseguzhang">堵塞故障</string>
+    <string name="yanwujinjiguzhang">烟雾紧急报警</string>
+    <string name="shebeiguzhang">设备故障</string>
+
 </resources>

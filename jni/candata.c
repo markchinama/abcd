@@ -121,11 +121,8 @@ JNIEXPORT void JNICALL Java_com_mark_bus_data_DataHandler_initialize(JNIEnv* env
 	midSetFA = (*env)->GetStaticMethodID(env, cls, "setDFA", "(IIIII)V");
 	midSetDBCM = (*env)->GetStaticMethodID(env, cls, "setDBCM", "([I)V");
 }
-void handleDFA(JNIEnv *env, fire_alarm_send_data * pfa) {
 
-}
-
-void handleDFA(JNIEnv *env, main_can_module_send_data * pcm) {
+void handleDBCM(JNIEnv *env, main_can_module_send_data * pcm) {
 	jintArray jintarray = (*env)->NewIntArray(env, 37);
 	(*env)->SetObjectArrayElement(env, jintarray, 0,
 			(jobject)((int) (pcm->relay_power)));
@@ -202,7 +199,16 @@ void handleDFA(JNIEnv *env, main_can_module_send_data * pcm) {
 	(*env)->SetObjectArrayElement(env, jintarray, 36,
 			(jobject)((int) (pcm->front_step_light)));
 
-	(*env)->CallStaticIntMethod(env, cls, midSetFA, jintarray);
+	(*env)->CallStaticIntMethod(env, cls, midSetDBCM, jintarray);
+
+}
+void handleDFA(JNIEnv *env, fire_alarm_send_data * pfa) {
+	int i1 = (int) pfa->device_status;
+	int i2 = (int) pfa->sensor_communication;
+	int i3 = (int) pfa->sensor_block;
+	int i4 = (int) pfa->sensor_issue;
+	int i5 = (int) pfa->life_signal;
+	(*env)->CallStaticIntMethod(env, cls, midSetFA, i1,i2,i3,i4,i5);
 
 }
 void handleDAC(JNIEnv *env, ac_can_send_data * pac) {
